@@ -1,0 +1,70 @@
+# source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '9.0'
+
+target 'Candy' do
+    
+  use_frameworks!
+  inhibit_all_warnings!
+
+  # Pods for Candy
+  
+  # Networking
+  pod 'Moya/RxSwift'  # https://github.com/Moya/Moya
+  
+  # Rx Extensions
+  pod 'RxDataSources'  # https://github.com/RxSwiftCommunity/RxDataSources
+  pod 'RxSwiftExt'  # https://github.com/RxSwiftCommunity/RxSwiftExt
+  pod 'NSObject+Rx'  # https://github.com/RxSwiftCommunity/NSObject-Rx
+  pod 'RxGesture'  # https://github.com/RxSwiftCommunity/RxGesture
+  pod 'RxOptional'  # https://github.com/RxSwiftCommunity/RxOptional
+  pod 'RxTheme'  # https://github.com/RxSwiftCommunity/RxTheme
+
+  # Auto Layout
+  pod 'SnapKit'  # https://github.com/SnapKit/SnapKit
+
+  # JSON Mapping
+  pod 'CleanJSON'  # https://github.com/Pircate/CleanJSON
+
+  # Image
+  pod 'Kingfisher'  # https://github.com/onevcat/Kingfisher
+  pod 'KingfisherWebP'  # https://github.com/Yeatse/KingfisherWebP
+
+  # Date
+  pod 'SwiftDate'  # https://github.com/malcommac/SwiftDate
+
+  # Tools
+  pod 'SwiftLint'  # https://github.com/realm/SwiftLint
+
+  # Keyboard
+  pod 'IQKeyboardManagerSwift'  # https://github.com/hackiftekhar/IQKeyboardManager
+
+  # Data Storage
+  pod 'KeychainSwift'  # https://github.com/evgenyneu/keychain-swift
+  pod 'SwiftyUserDefaults', '5.0.0-beta.5'  # https://github.com/sunshinejr/SwiftyUserDefaults
+  pod 'WCDB.swift'  # https://github.com/Tencent/wcdb
+
+  # Code Quality
+  pod 'SwifterSwift'  # https://github.com/SwifterSwift/SwifterSwift
+  pod 'CryptoSwift'  # https://github.com/krzyzanowskim/CryptoSwift
+  pod 'URLNavigator'  # https://github.com/devxoul/URLNavigator
+  
+  # UI
+  pod 'MJRefresh'  # https://github.com/CoderMJLee/MJRefresh
+  pod 'Toast-Swift'  # https://github.com/scalessec/Toast-Swift
+  pod 'ESTabBarController-swift'  # https://github.com/eggswift/ESTabBarController
+  pod 'EachNavigationBar'  # https://github.com/Pircate/EachNavigationBar
+  pod 'JXSegmentedView'  # https://github.com/pujiaxin33/JXSegmentedView
+  pod 'UIFontComplete'  # https://github.com/Nirma/UIFontComplete
+  pod 'Hero'  # https://github.com/HeroTransitions/Hero
+  pod 'NVActivityIndicatorView'  # https://github.com/ninjaprox/NVActivityIndicatorView
+  
+  # Logging
+  pod 'XCGLogger'  # https://github.com/DaveWoodCom/XCGLogger
+  
+  # Third Support
+  pod 'Bugly'  # https://bugly.qq.com/v2/
+  pod 'JPush'  # 推送
+  
+
+end

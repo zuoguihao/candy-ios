@@ -1,0 +1,230 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Bugly (2.5.2)
+  - CleanJSON (1.0.0)
+  - CryptoSwift (1.3.0)
+  - Differentiator (3.1.0)
+  - EachNavigationBar (1.14.1)
+  - ESTabBarController-swift (2.7)
+  - Hero (1.5.0)
+  - IQKeyboardManagerSwift (6.5.4)
+  - JCore (2.1.8)
+  - JPush (3.2.8):
+    - JCore (< 3.0.0, >= 2.0.0)
+  - JXSegmentedView (1.0.2)
+  - KeychainSwift (18.0.0)
+  - Kingfisher (4.10.1)
+  - KingfisherWebP (0.4.2):
+    - Kingfisher (~> 4.0)
+    - libwebp (>= 0.5.0)
+  - libwebp (1.0.3):
+    - libwebp/demux (= 1.0.3)
+    - libwebp/mux (= 1.0.3)
+    - libwebp/webp (= 1.0.3)
+  - libwebp/demux (1.0.3):
+    - libwebp/webp
+  - libwebp/mux (1.0.3):
+    - libwebp/demux
+  - libwebp/webp (1.0.3)
+  - MJRefresh (3.3.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Moya/RxSwift (13.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - "NSObject+Rx (4.4.1)":
+    - RxSwift (~> 4.3)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - Result (4.1.0)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxGesture (2.2.0):
+    - RxCocoa (~> 4.5)
+    - RxSwift (~> 4.5)
+  - RxOptional (3.6.2):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.5.0)
+  - RxSwiftExt (3.4.0):
+    - RxSwiftExt/Core (= 3.4.0)
+    - RxSwiftExt/RxCocoa (= 3.4.0)
+  - RxSwiftExt/Core (3.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwiftExt/RxCocoa (3.4.0):
+    - RxCocoa (~> 4.0)
+    - RxSwiftExt/Core
+  - RxTheme (3.3.0):
+    - RxCocoa (>= 4.4.2, ~> 4.4)
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - SnapKit (4.2.0)
+  - SQLiteRepairKit (1.2.2):
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - SwiftDate (6.1.0)
+  - SwifterSwift (5.1.0):
+    - SwifterSwift/AppKit (= 5.1.0)
+    - SwifterSwift/CoreGraphics (= 5.1.0)
+    - SwifterSwift/CoreLocation (= 5.1.0)
+    - SwifterSwift/Dispatch (= 5.1.0)
+    - SwifterSwift/Foundation (= 5.1.0)
+    - SwifterSwift/MapKit (= 5.1.0)
+    - SwifterSwift/SceneKit (= 5.1.0)
+    - SwifterSwift/SpriteKit (= 5.1.0)
+    - SwifterSwift/SwiftStdlib (= 5.1.0)
+    - SwifterSwift/UIKit (= 5.1.0)
+  - SwifterSwift/AppKit (5.1.0)
+  - SwifterSwift/CoreGraphics (5.1.0)
+  - SwifterSwift/CoreLocation (5.1.0)
+  - SwifterSwift/Dispatch (5.1.0)
+  - SwifterSwift/Foundation (5.1.0)
+  - SwifterSwift/MapKit (5.1.0)
+  - SwifterSwift/SceneKit (5.1.0)
+  - SwifterSwift/SpriteKit (5.1.0)
+  - SwifterSwift/SwiftStdlib (5.1.0)
+  - SwifterSwift/UIKit (5.1.0)
+  - SwiftLint (0.38.0)
+  - SwiftyUserDefaults (5.0.0-beta.5)
+  - Toast-Swift (5.0.1)
+  - UIFontComplete (4.0.0)
+  - URLNavigator (2.3.0)
+  - WCDB.swift (1.0.8.2):
+    - SQLiteRepairKit (~> 1.2.0)
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDBOptimizedSQLCipher (1.2.1)
+  - XCGLogger (7.0.0):
+    - XCGLogger/Core (= 7.0.0)
+  - XCGLogger/Core (7.0.0):
+    - ObjcExceptionBridging
+
+DEPENDENCIES:
+  - Bugly
+  - CleanJSON
+  - CryptoSwift
+  - EachNavigationBar
+  - ESTabBarController-swift
+  - Hero
+  - IQKeyboardManagerSwift
+  - JPush
+  - JXSegmentedView
+  - KeychainSwift
+  - Kingfisher
+  - KingfisherWebP
+  - MJRefresh
+  - Moya/RxSwift
+  - "NSObject+Rx"
+  - NVActivityIndicatorView
+  - RxDataSources
+  - RxGesture
+  - RxOptional
+  - RxSwiftExt
+  - RxTheme
+  - SnapKit
+  - SwiftDate
+  - SwifterSwift
+  - SwiftLint
+  - SwiftyUserDefaults (= 5.0.0-beta.5)
+  - Toast-Swift
+  - UIFontComplete
+  - URLNavigator
+  - WCDB.swift
+  - XCGLogger
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Bugly
+    - CleanJSON
+    - CryptoSwift
+    - Differentiator
+    - EachNavigationBar
+    - ESTabBarController-swift
+    - Hero
+    - IQKeyboardManagerSwift
+    - JCore
+    - JPush
+    - JXSegmentedView
+    - KeychainSwift
+    - Kingfisher
+    - KingfisherWebP
+    - libwebp
+    - MJRefresh
+    - Moya
+    - "NSObject+Rx"
+    - NVActivityIndicatorView
+    - ObjcExceptionBridging
+    - Result
+    - RxCocoa
+    - RxDataSources
+    - RxGesture
+    - RxOptional
+    - RxSwift
+    - RxSwiftExt
+    - RxTheme
+    - SnapKit
+    - SQLiteRepairKit
+    - SwiftDate
+    - SwifterSwift
+    - SwiftLint
+    - SwiftyUserDefaults
+    - Toast-Swift
+    - UIFontComplete
+    - URLNavigator
+    - WCDB.swift
+    - WCDBOptimizedSQLCipher
+    - XCGLogger
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Bugly: dbac48b55ad469a97cc4321045cd50df8f63d44f
+  CleanJSON: 702dd619e1329c6399a579aa19af311acf47e461
+  CryptoSwift: 1283821600233bdbeb96d7b389c3288c3bf77211
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  EachNavigationBar: 52548a353a86c441714e355d12f97726d111bbe1
+  ESTabBarController-swift: 4fb52ad03d94d0717ef97bc9eb09a5abfdded0a2
+  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
+  IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
+  JCore: a7f1dead960d77a97717c73ea8b0aa5b33706491
+  JPush: 8ce888d6dedfa417e90c8b6bc87405a16ce2e699
+  JXSegmentedView: 2988fe07060a9b91b0112eabd6dee0df0cbca8b3
+  KeychainSwift: c46e1438d121e47459fb304ac88c5e058a2a91ed
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  KingfisherWebP: 53632f3da248ccabd4999d775903d6ae0aaa7768
+  libwebp: 057912d6d0abfb6357d8bb05c0ea470301f5d61e
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxGesture: c1b7bf17166b0ef9d642a9510f8bac5785f18990
+  RxOptional: 80426a0ddbd092573e4c482d8cc13302078c4d5e
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  RxSwiftExt: 01f8ecbeeb355698e9c75365ebe908b00dacf45d
+  RxTheme: 40fdcdeba539402beface070d8472e8d0db78d66
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
+  SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
+  SwifterSwift: a9e8e144832638c2850b43da5feaf9598c6ad65b
+  SwiftLint: 4105f061f9812b214568b736dab580ab2c73a582
+  SwiftyUserDefaults: 8880483e55be344dce2e5e2f18c70b0564ff7676
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  UIFontComplete: 9542d390ee6114412a585d979b09fe820896695d
+  URLNavigator: 2593c0e2d293732ec5c44503cf54dceba1a68085
+  WCDB.swift: 05d509d7a0e60fb6e11c34eb7e4027c0fab5849f
+  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
+  XCGLogger: 0434f15e3909cdc450bb63faf638b8792ab782ab
+
+PODFILE CHECKSUM: 3ce958ed6fd3d65ab290c0646c4dc644f2acf89f
+
+COCOAPODS: 1.8.4
