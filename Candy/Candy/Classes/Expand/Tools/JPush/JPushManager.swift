@@ -31,10 +31,6 @@ class JPushManager: NSObject {
             entity.types = NSInteger(UNAuthorizationOptions.alert.rawValue) |
                 NSInteger(UNAuthorizationOptions.sound.rawValue) |
                 NSInteger(UNAuthorizationOptions.badge.rawValue)
-        } else if #available(iOS 8, *) {
-            entity.types = NSInteger(UIUserNotificationType.alert.rawValue) |
-                NSInteger(UIUserNotificationType.sound.rawValue) |
-                NSInteger(UIUserNotificationType.badge.rawValue)
         }
         JPUSHService.register(forRemoteNotificationConfig: entity, delegate: self)
         

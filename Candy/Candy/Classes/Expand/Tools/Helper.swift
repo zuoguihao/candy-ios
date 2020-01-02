@@ -56,7 +56,9 @@ func global_isReleaseVersion() -> Bool {
 
 public func global_goToAppStore(with urlStr: String) {
     if let url = URL(string: urlStr) {
-        UIApplication.shared.openURL(url)
+        UIApplication.shared.open(url, options: [:]) { (_) in
+            
+        }
     }
     
 }

@@ -1,6 +1,6 @@
 # source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'Candy' do
     
@@ -10,9 +10,11 @@ target 'Candy' do
   # Pods for Candy
   
   # Networking
-  pod 'Moya/RxSwift'  # https://github.com/Moya/Moya
+  pod 'Moya', '~> 13.0'  # https://github.com/Moya/Moya
   
   # Rx Extensions
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
   pod 'RxDataSources'  # https://github.com/RxSwiftCommunity/RxDataSources
   pod 'RxSwiftExt'  # https://github.com/RxSwiftCommunity/RxSwiftExt
   pod 'NSObject+Rx'  # https://github.com/RxSwiftCommunity/NSObject-Rx
@@ -48,6 +50,9 @@ target 'Candy' do
   pod 'SwifterSwift'  # https://github.com/SwifterSwift/SwifterSwift
   pod 'CryptoSwift'  # https://github.com/krzyzanowskim/CryptoSwift
   pod 'URLNavigator'  # https://github.com/devxoul/URLNavigator
+#  pod 'Localize-Swift'  # https://github.com/marmelroy/Localize-Swift
+  pod 'R.swift'  # https://github.com/mac-cain13/R.swift
+  pod 'ReachabilitySwift'  # https://github.com/ashleymills/Reachability.swift
   
   # UI
   pod 'MJRefresh'  # https://github.com/CoderMJLee/MJRefresh
@@ -58,6 +63,7 @@ target 'Candy' do
   pod 'UIFontComplete'  # https://github.com/Nirma/UIFontComplete
   pod 'Hero'  # https://github.com/HeroTransitions/Hero
   pod 'NVActivityIndicatorView'  # https://github.com/ninjaprox/NVActivityIndicatorView
+  pod 'DZNEmptyDataSet'  # https://github.com/dzenbot/DZNEmptyDataSet
   
   # Logging
   pod 'XCGLogger'  # https://github.com/DaveWoodCom/XCGLogger

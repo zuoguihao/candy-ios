@@ -21,7 +21,10 @@ class VideoHallController: ViewController {
     
     
     // MARK: - Action
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let web = WebController(type: .urlStr(urlStr: "https://www.baidu.com"))
+        navigationController?.pushViewController(web, animated: true)
+    }
     
     // MARK: - Lazy
     

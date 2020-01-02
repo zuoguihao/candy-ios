@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A2495006058B32FB773F167 /* Pods_Candy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A8C91FBAF23C69BB45F5E6 /* Pods_Candy.framework */; };
+		EF015B7E23BD8743002D1BEC /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF015B7D23BD8743002D1BEC /* WebController.swift */; };
 		EF54FE9823BBAED6004292EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF54FE9723BBAED6004292EF /* AppDelegate.swift */; };
 		EF54FEA123BBAED6004292EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF54FEA023BBAED6004292EF /* Assets.xcassets */; };
 		EF54FEA423BBAED6004292EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF54FEA223BBAED6004292EF /* LaunchScreen.storyboard */; };
@@ -40,6 +41,9 @@
 		EF5F091C23BC5A93002988D6 /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F091723BC5A93002988D6 /* DatabaseProtocol.swift */; };
 		EF5F091D23BC5A93002988D6 /* KeychainKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F091823BC5A93002988D6 /* KeychainKeys.swift */; };
 		EF5F091F23BC5BB6002988D6 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5F091E23BC5BB6002988D6 /* LogManager.swift */; };
+		EF64898423BE380900F14FFA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64898323BE380900F14FFA /* ViewModel.swift */; };
+		EF64898823BE50D700F14FFA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF64898A23BE50D700F14FFA /* Localizable.strings */; };
+		EF64898F23BE57E300F14FFA /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64898E23BE57E300F14FFA /* R.generated.swift */; };
 		EFBB1DAF23BD03A4001820B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB1DAA23BD03A4001820B5 /* ViewController.swift */; };
 		EFBB1DB023BD03A4001820B5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB1DAB23BD03A4001820B5 /* TableViewController.swift */; };
 		EFBB1DB123BD03A4001820B5 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB1DAC23BD03A4001820B5 /* NavigationController.swift */; };
@@ -51,6 +55,7 @@
 		0F5F798CD5DD0A111CA36F23 /* Pods-Candy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candy.debug.xcconfig"; path = "Target Support Files/Pods-Candy/Pods-Candy.debug.xcconfig"; sourceTree = "<group>"; };
 		20A8C91FBAF23C69BB45F5E6 /* Pods_Candy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Candy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A05F5CC025D5E5E510AFED /* Pods-Candy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candy.release.xcconfig"; path = "Target Support Files/Pods-Candy/Pods-Candy.release.xcconfig"; sourceTree = "<group>"; };
+		EF015B7D23BD8743002D1BEC /* WebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
 		EF54FE9423BBAED6004292EF /* Candy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Candy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF54FE9723BBAED6004292EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF54FEA023BBAED6004292EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +93,10 @@
 		EF5F091E23BC5BB6002988D6 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		EF5F092123BC5DC4002988D6 /* Candy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Candy.entitlements; sourceTree = "<group>"; };
 		EF5F092423BC6D95002988D6 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF64898323BE380900F14FFA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EF64898923BE50D700F14FFA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		EF64898B23BE50DE00F14FFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EF64898E23BE57E300F14FFA /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		EFBB1DAA23BD03A4001820B5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EFBB1DAB23BD03A4001820B5 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		EFBB1DAC23BD03A4001820B5 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -167,11 +176,13 @@
 			isa = PBXGroup;
 			children = (
 				EF5F092123BC5DC4002988D6 /* Candy.entitlements */,
+				EF64898E23BE57E300F14FFA /* R.generated.swift */,
 				EF54FF5B23BBB36D004292EF /* Candy-Bridging-Header.h */,
 				EF54FEA023BBAED6004292EF /* Assets.xcassets */,
 				EF54FEA223BBAED6004292EF /* LaunchScreen.storyboard */,
 				EF54FEA523BBAED6004292EF /* Info.plist */,
 				EF5880C723BCEDCB00CAD196 /* TabBarConfig.json */,
+				EF64898C23BE518600F14FFA /* Localizable */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -268,6 +279,11 @@
 			isa = PBXGroup;
 			children = (
 				EF5880CC23BCF65100CAD196 /* TestController.swift */,
+				EFBB1DAA23BD03A4001820B5 /* ViewController.swift */,
+				EFBB1DAB23BD03A4001820B5 /* TableViewController.swift */,
+				EFBB1DAD23BD03A4001820B5 /* CollectionViewController.swift */,
+				EF015B7D23BD8743002D1BEC /* WebController.swift */,
+				EF64898323BE380900F14FFA /* ViewModel.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -498,14 +514,19 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		EF64898C23BE518600F14FFA /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				EF64898A23BE50D700F14FFA /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
 		EFBB1DA923BD03A4001820B5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				EFBB1DAE23BD03A4001820B5 /* TabBarController.swift */,
 				EFBB1DAC23BD03A4001820B5 /* NavigationController.swift */,
-				EFBB1DAA23BD03A4001820B5 /* ViewController.swift */,
-				EFBB1DAB23BD03A4001820B5 /* TableViewController.swift */,
-				EFBB1DAD23BD03A4001820B5 /* CollectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -518,6 +539,7 @@
 			buildConfigurationList = EF54FEA823BBAED6004292EF /* Build configuration list for PBXNativeTarget "Candy" */;
 			buildPhases = (
 				B2419E13CD17638279EE20D3 /* [CP] Check Pods Manifest.lock */,
+				EF64898D23BE562200F14FFA /* ShellScript */,
 				EF54FE9023BBAED6004292EF /* Sources */,
 				EF54FE9123BBAED6004292EF /* Frameworks */,
 				EF54FE9223BBAED6004292EF /* Resources */,
@@ -555,6 +577,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = EF54FE8B23BBAED6004292EF;
 			productRefGroup = EF54FE9523BBAED6004292EF /* Products */;
@@ -572,6 +595,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF5880C823BCEDCB00CAD196 /* TabBarConfig.json in Resources */,
+				EF64898823BE50D700F14FFA /* Localizable.strings in Resources */,
 				EF54FEA423BBAED6004292EF /* LaunchScreen.storyboard in Resources */,
 				EF54FEA123BBAED6004292EF /* Assets.xcassets in Resources */,
 			);
@@ -619,6 +643,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EF64898D23BE562200F14FFA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/Candy/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Candy/Resources/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -636,6 +679,8 @@
 				EF5F08FE23BC2AD6002988D6 /* JPushManager.swift in Sources */,
 				EF5F091F23BC5BB6002988D6 /* LogManager.swift in Sources */,
 				EFBB1DB123BD03A4001820B5 /* NavigationController.swift in Sources */,
+				EF64898F23BE57E300F14FFA /* R.generated.swift in Sources */,
+				EF64898423BE380900F14FFA /* ViewModel.swift in Sources */,
 				EF54FF4223BBB00C004292EF /* VideoController.swift in Sources */,
 				EF5F090023BC2AE5002988D6 /* JPushModel.swift in Sources */,
 				EF5880C423BCE7E500CAD196 /* TabBarItemModel.swift in Sources */,
@@ -643,6 +688,7 @@
 				EF5F090423BC4C4C002988D6 /* AppConfigs.swift in Sources */,
 				EF5F090623BC573B002988D6 /* UIViewController+Ext.swift in Sources */,
 				EFBB1DB023BD03A4001820B5 /* TableViewController.swift in Sources */,
+				EF015B7E23BD8743002D1BEC /* WebController.swift in Sources */,
 				EF5F090823BC576A002988D6 /* UIFont+Ext.swift in Sources */,
 				EF5F090E23BC596A002988D6 /* Helper.swift in Sources */,
 				EF5F091B23BC5A93002988D6 /* DatabaseManager.swift in Sources */,
@@ -674,6 +720,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		EF64898A23BE50D700F14FFA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF64898923BE50D700F14FFA /* zh-Hans */,
+				EF64898B23BE50DE00F14FFA /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -681,6 +736,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -727,7 +783,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -741,6 +797,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -781,7 +838,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

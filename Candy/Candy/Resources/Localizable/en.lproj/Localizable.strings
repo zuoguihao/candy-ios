@@ -1,0 +1,72 @@
+/* 
+  Localizable.strings
+  Candy
+
+  Created by 左聂荣 on 2020/1/3.
+  Copyright © 2020 左聂荣. All rights reserved.
+*/
+
+/* Common */
+"Common.Yes" = "Yes";
+"Common.No" = "No";
+"Common.OK" = "OK";
+"Common.Cancel" = "Cancel";
+"Common.Done" = "Done";
+"Common.Back" = "Back";
+"Common.Close" = "Close";
+"Common.Edit" = "Edit";
+"Common.Next" = "Next";
+"Common.Skip" = "Skip";
+"Common.Reset" = "Reset";
+"Common.Save" = "Save";
+"Common.Delete" = "Delete";
+"Common.Search" = "Search";
+"Common.Success" = "Success";
+"Common.Error" = "Error";
+"Common.NoResults" = "No Results";
+
+/* Net */
+"Net.NoConnection.Title" = "Unavailable network";
+"Net.NoConnection.Desc" = "Please check the network then click page refresh";
+"Net.Loading" = "Loading desperately...";
+
+/* Toast */
+"Toast.ConnectionBack.Message" = "Back online";
+"Toast.ConnectionLost.Message" = "No connection";
+
+/* Login */
+//"Login.Navigation.Title" = "Login";
+"Login.BasicSegment.Title" = "Basic";
+"Login.OAuthSegment.Title" = "OAuth";
+"Login.LoginTextField.Placeholder" = "login";
+"Login.PasswordTextField.Placeholder" = "password";
+"Login.BasicLoginButton.Title" = "Login";
+"Login.TitleLabel.Text" = "Welcome to Candy";
+"Login.DetailLabel.Text" = "For API requests using Basic Authentication or OAuth, you can make up to 5000 requests per hour. \n\nFor unauthenticated requests, the rate limit allows for up to 60 requests per hour.";
+"Login.OAuthloginButton.Title" = "Sign in with Github";
+"Login.LoginFailed.Description" = "Please check your login or password";
+
+/* Settings */
+"Settings.Navigation.Title" = "Settings";
+"Settings.AccountSection.Title" = "Account";
+"Settings.ProjectsSection.Title" = "My Projects";
+"Settings.PreferencesSection.Title" = "Preferences";
+"Settings.Banner.Title" = "Ads enabled";
+"Settings.NightMode.Title" = "Night mode";
+"Settings.Theme.Title" = "Color theme";
+"Settings.Language.Title" = "Language";
+"Settings.Contacts.Title" = "Invite friends";
+"Settings.RemoveCache.Title" = "Remove cache";
+"Settings.RemoveCache.Alert.SuccessMessage" = "Cache Successfully Cleared";
+"Settings.SupportSection.Title" = "Support";
+"Settings.Acknowledgements.Title" = "Acknowledgements";
+"Settings.WhatsNew.Title" = "Whats New";
+"Settings.LogOut.Title" = "Log Out";
+"Settings.Logout.Alert.Message" = "Are you sure want to log out from Candy?";
+"Settings.Logout.Alert.ConfirmButton.Title" = "Logout";
+
+/* Language */
+"Language.Navigation.Title" = "Language";
+
+/* Theme */
+"Theme.Navigation.Title" = "Color theme";
