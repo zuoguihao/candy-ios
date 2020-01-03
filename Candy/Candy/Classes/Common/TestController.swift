@@ -15,16 +15,16 @@ class TestController: ViewController {
         super.viewDidLoad()
         makeUI()
     }
-    
+
     // MARK: - Action
-    
+
     // MARK: - Lazy
-    
+
 }
 
 // MARK: - Private Method
 private extension TestController {
     func makeUI() {
-        
+
     }
 }

@@ -22,20 +22,20 @@ class WebController: ViewController {
             view.setNeedsDisplay()
         }
     }
-    
+
     private let type: WebType
-    
+
     // MARK: - LifeCycle
     override var preferredStatusBarStyle: UIStatusBarStyle { return .default }
-    
+
     override var shouldAutorotate: Bool {
         return true
     }
-    
+
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .all
     }
-    
+
     public init(type: WebType) {
         self.type = type
         super.init(nibName: nil, bundle: nil)
@@ -44,10 +44,10 @@ class WebController: ViewController {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     override public func viewDidLoad() {
         super.viewDidLoad()
-        
+
 //        addCloseBackItem()
         makeUI()
         loadURL()
@@ -59,42 +59,43 @@ class WebController: ViewController {
 //            }
 //        }
     }
-    
+
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
+
         var originY: CGFloat = UIApplication.shared.statusBarFrame.height
         if navigationController != nil {
             originY = UIApplication.shared.statusBarFrame.height + 44
         }
         webView.frame = view.bounds
         progressView.frame = CGRect(x: 0, y: originY, width: view.frame.width, height: 2)
-        
+
         webView.scrollView.contentInset = UIEdgeInsets(top: originY, left: 0, bottom: 0, right: 0)
     }
-    
+
     deinit {
         webView.removeObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress))
     }
-    
+
     // MARK: - Action
     /// 设置进度条
-    override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    // swiftlint:disable:next block_based_kvo
+    override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == #keyPath(WKWebView.estimatedProgress), progressView.progress != 1.0 {
             progressView.setProgress(Float(webView.estimatedProgress), animated: true)
         }
     }
-    
+
     // MARK: - Lazy
     /// webView
     private lazy var webView: WKWebView = {
         let webView = WKWebView(frame: .zero, configuration: WKWebViewConfiguration())
-        
+
         webView.allowsBackForwardNavigationGestures = true
         webView.sizeToFit()
-        
+
         webView.navigationDelegate = self
-        
+
         return webView
     }()
     /// 懒加载进度条
@@ -111,7 +112,7 @@ class WebController: ViewController {
 
 // MARK: - Private Method
 private extension WebController {
-    
+
     func makeUI() {
         view.backgroundColor = .white
         if #available(iOS 11, *) {
@@ -119,11 +120,11 @@ private extension WebController {
         } else {
             automaticallyAdjustsScrollViewInsets = false
         }
-        
+
         view.addSubview(webView)
         view.addSubview(progressView)
     }
-    
+
     func loadURL() {
         switch type {
         case .urlStr(let urlStr):
@@ -140,7 +141,7 @@ private extension WebController {
             let htmlhead = "<html lang=\"zh-cn\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, nickName-scalable=no\"></meta><style>img{max-width: 100%; width:auto; height:auto;}</style></head><body>"
             let htmlEnd = "</body></html>"
             let content = htmlhead + body + htmlEnd
-            
+
             webView.loadHTMLString(content, baseURL: nil)
         }
     }
@@ -148,7 +149,7 @@ private extension WebController {
 
 // MARK: - WKUIDelegate, WKNavigationDelegate
 extension WebController: WKUIDelegate, WKNavigationDelegate {
-    
+
     public func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         progressView.progress = 0.0
         progressView.isHidden = false
@@ -156,9 +157,10 @@ extension WebController: WKUIDelegate, WKNavigationDelegate {
     }
 
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        
+
         progressView.progress = 1.0
-        UIView.animate(withDuration: 0.5, animations: {
+        UIView.animate(withDuration: 0.5,
+                       animations: {
             self.progressView.transform = CGAffineTransform(scaleX: 1.0, y: 1.5)
         }, completion: { _ in
             self.progressView.isHidden = true

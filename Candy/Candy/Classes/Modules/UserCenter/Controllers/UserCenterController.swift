@@ -10,28 +10,28 @@ import UIKit
 
 class UserCenterController: ViewController {
     // MARK: - Property
-    
+
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         makeUI()
     }
-    
+
     // MARK: - Action
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let testVC = TestController()
         navigationController?.pushViewController(testVC, animated: true)
     }
-    
+
     // MARK: - Lazy
-    
+
 }
 
 // MARK: - Private Method
 private extension UserCenterController {
-    
+
     func makeUI() {
-        
+
     }
 }

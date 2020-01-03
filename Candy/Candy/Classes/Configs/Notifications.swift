@@ -13,8 +13,8 @@ import Foundation
 public let kNotiCenter = NotificationCenter.default
 
 public extension NSNotification.Name {
-    
+
     /// 用户是否登录
     static let kIsUserLogin = Notification.Name("kIsUserLogin")
-    
+
 }

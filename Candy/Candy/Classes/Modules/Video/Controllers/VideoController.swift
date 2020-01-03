@@ -10,24 +10,24 @@ import UIKit
 
 class VideoController: ViewController {
     // MARK: - Property
-    
+
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         makeUI()
     }
-    
+
     // MARK: - Action
-    
+
     // MARK: - Lazy
-    
+
 }
 
 // MARK: - Private Method
 private extension VideoController {
-    
+
     func makeUI() {
-        
+
     }
 }

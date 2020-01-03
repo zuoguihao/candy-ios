@@ -17,10 +17,10 @@ import XCGLogger
 class LibsManager: NSObject {
     // MARK: - Property
     static let shared = LibsManager()
-    
+
     private override init() {
     }
-    
+
     // MARK: - LifeCycle
     func setupLibs(with window: UIWindow? = nil) {
 
@@ -33,7 +33,7 @@ class LibsManager: NSObject {
 }
 
 private extension LibsManager {
-    
+
     func setupKeyboardManager() {
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.shouldToolbarUsesTextFieldTintColor = true
@@ -42,10 +42,10 @@ private extension LibsManager {
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
 //        IQKeyboardManager.shared.registerTextFieldViewClass(YYTextView.self, didBeginEditingNotificationName: NSNotification.Name.YYTextViewTextDidBeginEditing.rawValue, didEndEditingNotificationName: NSNotification.Name.YYTextViewTextDidEndEditing.rawValue)
     }
-    
+
     func setupActivityView() {
     }
-    
+
     ///  Toast 设置
     func setupToast() {
         ToastManager.shared.isTapToDismissEnabled = true
@@ -56,7 +56,7 @@ private extension LibsManager {
         style.imageSize = CGSize(width: 30, height: 30)
         ToastManager.shared.style = style
     }
-    
+
     /// Bugly 设置
     func setupBugly() {
         Bugly.start(withAppId: Configs.Keys.bugly)

@@ -12,16 +12,16 @@ import Foundation
 //var kHost: HostType = HostType(rawValue: Defaults.hostType ?? HostType.dev.rawValue)!
 
 struct Configs {
-        
+
     struct URL {
-        
+
     }
-    
+
     struct Path {
         static let Documents = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
         static let Tmp = NSTemporaryDirectory()
     }
-    
+
     /// 各种key
     struct Keys {
         /// iTunesconnect 上面的 APPID
@@ -87,7 +87,7 @@ extension CGFloat {
     static let segmentedControl: CGFloat = 36
     /// 分割线高度
     static let line: CGFloat = 0.4
-    
+
     static let d08: CGFloat = 8
     static let d32: CGFloat = 32
     static let d34: CGFloat = 34

@@ -10,26 +10,26 @@ import Foundation
 import UIKit
 
 public extension FileManager {
-    
+
     /// database路径
     private var databasePath: String {
         return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
     }
-    
+
     /// 命名空间
     private var namespace: String {
         return Bundle.main.infoDictionary!["CFBundleExecutable"] as? String ?? ""
     }
-        
+
     /// 合并文件路径
     private var filePath: String {
         return databasePath + "/" + namespace + "/" + "fileManager" + "/"
     }
-    
+
 }
 
 public extension FileManager {
-    
+
     /// 写入文件(失败: 文件已存在或者不支持的文件类型)
     ///
     /// - Parameters:
@@ -41,11 +41,11 @@ public extension FileManager {
         guard let suffixName = createAFileNameSuffixBasedOnTheFileType(with: file) else { return false }
 
         let fileAllPath = filePath + fileName
-        
+
         if !fileExists(atPath: fileAllPath) {
-            
+
             createFile(atPath: fileAllPath, contents: nil, attributes: nil)
-            
+
             if suffixName == ".jpg" {
                 // swiftlint:disable:next force_cast
                 try? (file as! UIImage).pngData()?.write(to: URL(fileURLWithPath: fileAllPath))
@@ -55,14 +55,14 @@ public extension FileManager {
                 print(isSuccess == true ? "写入成功":"写入失败")
                 return isSuccess
             }
-            
+
         }
-        
+
         print("文件已存在")
         return false
-        
+
     }
-    
+
     /// 读取文件
     ///
     /// - Parameter fileName: 文件名称.
@@ -73,7 +73,7 @@ public extension FileManager {
         }
         return nil
     }
-    
+
     /// 读取数组文件
     /// 字典/数组 存储是以plist文件的格式存储的, 所以需要独立出来取值.
     /// - Parameter fileName: 文件名称.
@@ -85,20 +85,20 @@ public extension FileManager {
         }
         return nil
     }
-    
+
     /// 读取字典文件
     /// 字典/数组 存储是以plist文件的格式存储的, 所以需要独立出来取值.
     /// - Parameter fileName: 文件名称.
     /// - Returns: 存在则返回结果 否则返回nil
     func readDictionary(with fileName: String) -> [String: AnyObject]? {
         let fileAllPath = filePath + fileName
-        
+
         if fileExists(atPath: fileAllPath) {
             return NSDictionary(contentsOf: URL(fileURLWithPath: fileAllPath)) as? [String: AnyObject]
         }
         return nil
     }
-    
+
     /// 删除文件(如test.jpg/test.plist/test.txt 如无后缀可不传)
     ///
     /// - Parameter fileName: 文件名称.
@@ -113,7 +113,7 @@ public extension FileManager {
         }
         return false
     }
-    
+
     /// 获取文件大小(kb)
     ///
     /// - Parameter fileName: 文件全名称
@@ -128,12 +128,12 @@ public extension FileManager {
         guard let attribute = try? attributesOfItem(atPath: fileAllPath) else {
             return 0
         }
-        
+
         let fileSize = attribute[.size] as? Double
         return (fileSize ?? 0) / 1024
-        
+
     }
-    
+
     /// 根据要存储的文件类型创建对应的后缀 规则: 数组/字典 后缀为plist, String 后缀为txt, UIImage后缀为jpg, Data为不可知具体类型后缀为"", 其它则返回nil
     ///
     /// - Parameter file: 文件
@@ -149,7 +149,7 @@ public extension FileManager {
         } else if file is Data {
             return ""
         }
-  
+
         return nil
     }
 }

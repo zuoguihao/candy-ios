@@ -14,18 +14,18 @@ class JPushManager: NSObject {
     private var isMSGCalculated: Bool = false
     // MARK: LifeCycle
     static let shared = JPushManager()
-    
+
     private override init() {}
-    
+
     deinit {
         kNotiCenter.removeObserver(self)
     }
-    
+
     // MARK: - Public Method
     /// 注册推送
     func register(launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
         guard UIDevice.deviceName != "Simulator" else { return }
-        
+
         /// 注册远程通知
         let entity = JPUSHRegisterEntity()
         if #available(iOS 10, *) {
@@ -34,32 +34,32 @@ class JPushManager: NSObject {
                 NSInteger(UNAuthorizationOptions.badge.rawValue)
         }
         JPUSHService.register(forRemoteNotificationConfig: entity, delegate: self)
-        
+
         // 启动推送
         JPUSHService.setup(withOption: launchOptions, appKey: Configs.Keys.jpush, channel: global_isReleaseVersion() ? "App Store" : "beta", apsForProduction: true, advertisingIdentifier: Keychains.uuid)
-        
+
         let noti = NotificationCenter.default
         noti.addObserver(self, selector: #selector(networkDidSetup(_:)), name: NSNotification.Name.jpfNetworkDidSetup, object: nil)
         noti.addObserver(self, selector: #selector(networkDidRegister(_:)), name: NSNotification.Name.jpfNetworkDidRegister, object: nil)
         noti.addObserver(self, selector: #selector(networkDidLogin(_:)), name: NSNotification.Name.jpfNetworkDidLogin, object: nil)
         noti.addObserver(self, selector: #selector(networkDidReceiveMessage(_:)), name: NSNotification.Name.jpfNetworkDidReceiveMessage, object: nil)
-        
+
         JPUSHService.setLogOFF()
         clearBadge()
     }
-    
+
     /// 注册 token 标识
     func register(deviceToken: Data) {
         JPUSHService.registerDeviceToken(deviceToken)
     }
-    
+
     /// 处理 iOS10 之前的推送
     func handlePushBeforeiOS10(_ application: UIApplication, userInfo: [AnyHashable: Any]) {
         JPUSHService.handleRemoteNotification(userInfo)
-        
+
         handlePush(isAPPActive: application.applicationState == .active, userInfo: userInfo, withCompletionHandler: nil)
     }
-    
+
     /// 设置推送标识（tag、alias）
     func setupNotiAlias(isLogin: Bool) {
         /**
@@ -70,37 +70,39 @@ class JPushManager: NSObject {
         let systemVersion = UIDevice.current.systemVersion
         let tags: Set<String> = [appVersion, systemVersion]
         let alias: String = "notLogin"
-        
+
 //        if isLogin {// 登录用户
 //            alias = RAUserManager.shared.userAccount.user.userPhone
 //        }
-        
+
         // 上传推送地区
 //        YXLocationTool.shared.requestLocation(isReGeocode: true) { (location, regeocode, error) in
 //            if let regeocode = regeocode {// 如果有编码结果，更新编码结果
 //                tags += [regeocode.province, regeocode.city, regeocode.citycode]
 //            }
-        
-            JPUSHService.setTags(tags, completion: { code, iTags, seq in
+
+            JPUSHService.setTags(tags,
+                                 completion: { code, iTags, seq in
                 log.debug("极光回调：tags 绑定成功：\(iTags?.description ?? "")")
             }, seq: 1)
-            JPUSHService.setAlias(alias, completion: { code, iAlias, seq in
+            JPUSHService.setAlias(alias,
+                                  completion: { code, iAlias, seq in
                 log.debug("极光回调：alias 绑定成功：\(iAlias?.description ?? "")")
             }, seq: 1)
 //        }
     }
-    
+
     // MARK: - Action
     /// 建立连接
     @objc private func networkDidSetup(_ notification: Notification) {
         log.debug("建立连接")
     }
-    
+
     /// 注册成功
     @objc private func networkDidRegister(_ notification: Notification) {
         log.debug("注册成功过")
     }
-    
+
     /// 登录成功，极光建议在此通知方法中设置别名等
     @objc private func networkDidLogin(_ notification: Notification) {
         // 移除所有展示的推送
@@ -108,23 +110,23 @@ class JPushManager: NSObject {
             UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
             UNUserNotificationCenter.current().removeAllDeliveredNotifications()
         } else {
-            
+
         }
-        
+
         // 更新推送 tag、alias
 //        setupNotiAlias(isLogin: RAUserManager.shared.isUserLogin)
     }
-    
+
     /// 收到极光专有的自定义消息（非APNS）
     @objc private func networkDidReceiveMessage(_ notification: Notification) {
-        
+
     }
-    
+
     /// 拨打客服
     @objc private func phone() {
 //        global_phone(with: YXHomeMenuData.baseDataModel?.tel ?? kTitle.customerServicePhoneNumber, isShowActionSheet: false)
     }
-    
+
 }
 
 // MARK: - Private Method
@@ -134,14 +136,14 @@ private extension JPushManager {
 //        let push = getPushType(userInfo)
 //        let rootVC = UIViewController.currentVC()
 //        setupMessageCount(isAPPActive: isAPPActive, isAdd: true)
-        
+
         // 根据推送类型进行跳转处理
-        
+
     }
-    
+
     /// 处理极光专有自定义推送内容
     func handleCustomPush(_ model: JPushModel) {
-        
+
     }
     /*
     /// 获取推送类型【用于界面跳转】
@@ -149,7 +151,7 @@ private extension JPushManager {
         
     }
     */
-    
+
     /// 设置推送触发方式
     func setupCompletion(completionHandler: ((Int) -> Void)?) {
         guard let completionHandler = completionHandler else { return }
@@ -161,13 +163,13 @@ private extension JPushManager {
                 NSInteger(UIUserNotificationType.alert.rawValue))
         }
     }
-    
+
     /// 清除角标
     func clearBadge() {
         JPUSHService.resetBadge()
         UIApplication.shared.applicationIconBadgeNumber = 0
     }
-    
+
     /// 跳转至指定页面
     func pushVC(rootVC: UIViewController?, vc: UIViewController) {
         rootVC?.navigationController?.pushViewController(vc, animated: true)
@@ -196,9 +198,8 @@ private extension JPushManager {
 }
 
 extension JPushManager {
-    // TODO: - 暂时没时间看更新了什么~
-    func jpushNotificationAuthorization(_ status: JPAuthorizationStatus, withInfo info: [AnyHashable : Any]!) {
-        
+    func jpushNotificationAuthorization(_ status: JPAuthorizationStatus, withInfo info: [AnyHashable: Any]!) {
+
     }
 }
 
@@ -208,12 +209,12 @@ extension JPushManager: JPUSHRegisterDelegate {
     // iOS 12 Support
     func jpushNotificationCenter(_ center: UNUserNotificationCenter!, openSettingsFor notification: UNNotification?) {
         if let trigger = notification?.request.trigger, trigger.isKind(of: UNPushNotificationTrigger.classForCoder()) {//从通知界面直接进入应用
-            
+
         } else {//从通知设置界面进入应用
-            
+
         }
     }
-    
+
     /// 新特性，前台收到推送后调用该方法
     func jpushNotificationCenter(_ center: UNUserNotificationCenter!, willPresent notification: UNNotification!, withCompletionHandler completionHandler: ((Int) -> Void)!) {
         let userInfo = notification.request.content.userInfo
@@ -221,27 +222,27 @@ extension JPushManager: JPUSHRegisterDelegate {
         if let trigger = notification.request.trigger, trigger.isKind(of: UNPushNotificationTrigger.classForCoder()) {
             JPUSHService.handleRemoteNotification(userInfo)
         }
-        
+
         isMSGCalculated = false
         handlePush(isAPPActive: true, userInfo: userInfo, withCompletionHandler: completionHandler)
         isMSGCalculated = true
     }
-    
+
     /// 新特性，后台和杀死状态下点击推送后调用该方法
     func jpushNotificationCenter(_ center: UNUserNotificationCenter!, didReceive response: UNNotificationResponse!, withCompletionHandler completionHandler: (() -> Void)!) {
-        
+
         center.removeAllDeliveredNotifications()// 移除通知中心的所有展示的推送
 //        center.removeDeliveredNotifications(withIdentifiers: [response.actionIdentifier])// 移除点击的推送，其它展示的不移除
-        
+
         let userInfo = response.notification.request.content.userInfo
         // Required
         if let trigger = response.notification.request.trigger, trigger.isKind(of: UNPushNotificationTrigger.classForCoder()) {
             JPUSHService.handleRemoteNotification(userInfo)
         }
-        
+
         handlePush(isAPPActive: false, userInfo: userInfo, withCompletionHandler: nil)
         isMSGCalculated = false
         completionHandler()// 系统要求执行这个方法
     }
-    
+
 }

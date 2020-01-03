@@ -15,15 +15,15 @@ class NavigationController: UINavigationController {
     override var childForStatusBarStyle: UIViewController? {
         return topViewController
     }
-    
+
     override var shouldAutorotate: Bool {
         return topViewController?.shouldAutorotate ?? false
     }
-    
+
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return topViewController?.supportedInterfaceOrientations ?? .portrait
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,7 +36,7 @@ class NavigationController: UINavigationController {
             .font: UIFont.system_19
         ]
     }
-    
+
     // MARK: - UINavigationControllerDelegate
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if viewControllers.isEmpty {

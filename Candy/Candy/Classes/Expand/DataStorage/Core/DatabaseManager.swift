@@ -12,20 +12,20 @@ import WCDBSwift
 //使用参考： https://github.com/Tencent/wcdb/wiki/Swift-增删查改
 
 class DatabaseManager {
-    
+
     ///单例
     static let shared = DatabaseManager()
-    
+
     private init() {
         #if DEBUG
         debugPrint("DBFiles Path：\(dbPath)")
         #endif
     }
-    
+
     private let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String ?? ""
     private lazy var dbPath = NSHomeDirectory() + "/Documents/" + "JLDBFiles" + "/"
     private lazy var database: Database = Database(withPath: dbPath + namespace + ".db")
-    
+
     /// 创建数据库对象
     ///
     /// - Parameter dbName: 数据库名
@@ -35,7 +35,7 @@ class DatabaseManager {
             shared.database = Database(withPath: shared.dbPath + dbName + ".db")
         }
     }
-    
+
     /// 创建数据库表
     ///
     /// - Parameters:
@@ -48,11 +48,11 @@ class DatabaseManager {
             debugPrint("create table error:", error)
         }
     }
-    
+
 }
 
 extension DatabaseManager {
-    
+
     /// 插入操作
     ///
     /// - Parameters:
@@ -73,7 +73,7 @@ extension DatabaseManager {
             return false
         }
     }
-    
+
     /// 插入操作(如果已经存在那么替换)
     ///
     /// - Parameters:
@@ -94,7 +94,7 @@ extension DatabaseManager {
             return false
         }
     }
-    
+
     /// 删除操作 如只设置表名 表示需要删除整个表的数据,当时不会删除表本身
     ///
     /// - Parameters:
@@ -119,7 +119,7 @@ extension DatabaseManager {
             return false
         }
     }
-    
+
     /// 更新操作
     ///
     /// - Parameters:
@@ -148,7 +148,7 @@ extension DatabaseManager {
             return false
         }
     }
-    
+
     /// 获取数据
     /// - Parameters:
     ///   - table: 表名
@@ -173,7 +173,7 @@ extension DatabaseManager {
             offset: offset)
         return object
     }
-        
+
     /// 获取value
     /// - Parameters:
     ///   - columnResultConvertible: 获取哪个字段?
@@ -192,7 +192,7 @@ extension DatabaseManager {
         let value = try? database.getValue(on: columnResultConvertible, fromTable: table, where: condition, orderBy: orderList, limit: limit, offset: offset)
         return value
     }
-    
+
     /// 删除表
     ///
     /// - Parameters:
@@ -208,7 +208,7 @@ extension DatabaseManager {
             return false
         }
     }
-        
+
     /// 删除数据库
     @discardableResult
     static func removeDBFile(table: String) -> Bool {
@@ -222,7 +222,7 @@ extension DatabaseManager {
             return false
         }
     }
-    
+
     /// 开启事务
     ///
     /// - Parameters:
@@ -230,7 +230,7 @@ extension DatabaseManager {
     static func run(table: String, transaction: () -> Void) {
         try? shared.database.run(transaction: transaction)
     }
-    
+
     /// 数据库设置密码
     ///
     /// - Parameters:

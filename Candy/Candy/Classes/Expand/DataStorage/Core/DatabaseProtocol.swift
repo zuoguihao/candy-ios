@@ -18,18 +18,18 @@ public extension DatabaseProtocol where Self: TableCodable {
         print("\(Self.self)")
         return "\(Self.self)"
     }
-    
+
     /// 创建数据库对象
     /// - Parameter dbName: 数据库名
     static func creatDatabase(dbName: String? = nil) {
         DatabaseManager.creatDatabase(dbName: dbName)
     }
-    
+
     /// 创建数据库中该类对应的表，类名即表名，无需指定
     static func createTable() {
         return DatabaseManager.create(table: "\(Self.self)", of: self)
     }
-    
+
     /// 删除该类对应的表
     ///
     /// - Returns: 是否成功
@@ -37,7 +37,7 @@ public extension DatabaseProtocol where Self: TableCodable {
     static func dropTable() -> Bool {
         return DatabaseManager.drop(table: "\(Self.self)")
     }
-    
+
     /// 插入操作
     ///
     /// - Parameters:
@@ -47,7 +47,7 @@ public extension DatabaseProtocol where Self: TableCodable {
     func insert(on propertyConvertibleList: [PropertyConvertible]? = nil) -> Bool {
         return DatabaseManager.shared.insert(objects: [self], on: propertyConvertibleList, intoTable: tableName)
     }
-    
+
     /// 插入操作(如果已经存在那么替换)
     ///
     /// - Parameters:
@@ -59,7 +59,7 @@ public extension DatabaseProtocol where Self: TableCodable {
                                                       on: propertyConvertibleList,
                                                       intoTable: tableName)
     }
-    
+
     /// 删除操作 如只设置表名 表示需要删除整个表的数据
     ///
     /// - Parameters:
@@ -80,7 +80,7 @@ public extension DatabaseProtocol where Self: TableCodable {
             limit: limit,
             offset: offset)
     }
-    
+
     /// 更新操作
     ///
     /// - Parameters:
@@ -105,7 +105,7 @@ public extension DatabaseProtocol where Self: TableCodable {
                                              limit: limit,
                                              offset: offset)
     }
-    
+
     /// 获取操作
     ///
     /// - Parameters:
@@ -129,7 +129,7 @@ public extension DatabaseProtocol where Self: TableCodable {
             limit: limit,
             offset: offset)
     }
-    
+
     /// 获取单个对象
     ///
     /// - Parameters:
@@ -147,7 +147,7 @@ public extension DatabaseProtocol where Self: TableCodable {
             limit: 1,
             offset: nil)?.first
         }
-    
+
     /// 值查询
     ///
     /// - Parameters:
@@ -171,14 +171,14 @@ public extension DatabaseProtocol where Self: TableCodable {
             limit: limit,
             offset: offset)
     }
-    
+
     /// 开启一个事务
     ///
     /// - Parameter transaction: 事务执行模块
     static func run(transaction: () -> Void) {
         DatabaseManager.run(table: "\(Self.self)", transaction: transaction)
     }
-    
+
     /// 设置密码 (如果要给数据库设置密码 那么此方法要在增删查改之前执行, 否则会因为无法解密出错)
     ///
     /// - Parameter password: 密码
@@ -190,7 +190,7 @@ public extension DatabaseProtocol where Self: TableCodable {
 
 // MARK: - 为数组添加扩展让其存在直接操作数据库的方法
 public extension Array where Element: DatabaseProtocol & TableCodable {
-    
+
     /// 插入数据
     ///
     /// - Parameter propertyConvertibleList: 要插入的字段 不传默认全部插入
@@ -198,7 +198,7 @@ public extension Array where Element: DatabaseProtocol & TableCodable {
     func insert(on propertyConvertibleList: [PropertyConvertible]? = nil) -> Bool {
         return DatabaseManager.shared.insert(objects: self, on: propertyConvertibleList, intoTable: "\(Element.self)")
     }
-    
+
     /// 插入数据(如果已经存在那么替换)
     ///
     /// - Parameter propertyConvertibleList: 要插入的字段 不传默认全部插入
@@ -206,5 +206,5 @@ public extension Array where Element: DatabaseProtocol & TableCodable {
     func insertOrReplace(on propertyConvertibleList: [PropertyConvertible]? = nil) -> Bool {
         return DatabaseManager.shared.insertOrReplace(objects: self, on: propertyConvertibleList, intoTable: "\(Element.self)")
     }
-    
+
 }

@@ -10,28 +10,28 @@ import UIKit
 
 class VideoHallController: ViewController {
     // MARK: - Property
-    
+
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         makeUI()
     }
-    
+
     // MARK: - Action
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let web = WebController(type: .urlStr(urlStr: "https://github.com/zuonierong"))
         navigationController?.pushViewController(web, animated: true)
     }
-    
+
     // MARK: - Lazy
-    
+
 }
 
 // MARK: - Private Method
 private extension VideoHallController {
-    
+
     func makeUI() {
-        
+
     }
 }
