@@ -11,14 +11,12 @@ import UIKit
 class UserCenterController: ViewController {
     // MARK: - Property
     
-    
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         makeUI()
     }
-    
     
     // MARK: - Action
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

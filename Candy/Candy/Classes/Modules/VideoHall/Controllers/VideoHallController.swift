@@ -11,7 +11,6 @@ import UIKit
 class VideoHallController: ViewController {
     // MARK: - Property
     
-    
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,10 +18,9 @@ class VideoHallController: ViewController {
         makeUI()
     }
     
-    
     // MARK: - Action
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let web = WebController(type: .urlStr(urlStr: "https://www.baidu.com"))
+        let web = WebController(type: .urlStr(urlStr: "https://github.com/zuonierong"))
         navigationController?.pushViewController(web, animated: true)
     }
     

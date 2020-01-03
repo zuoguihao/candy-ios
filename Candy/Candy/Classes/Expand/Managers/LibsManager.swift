@@ -15,11 +15,10 @@ import XCGLogger
 
 /// The manager class for configuring all libraries used in app.
 class LibsManager: NSObject {
-    
     // MARK: - Property
     static let shared = LibsManager()
+    
     private override init() {
-        
     }
     
     // MARK: - LifeCycle
@@ -45,7 +44,6 @@ private extension LibsManager {
     }
     
     func setupActivityView() {
-        
     }
     
     ///  Toast 设置
@@ -63,5 +61,4 @@ private extension LibsManager {
     func setupBugly() {
         Bugly.start(withAppId: Configs.Keys.bugly)
     }
-    
 }

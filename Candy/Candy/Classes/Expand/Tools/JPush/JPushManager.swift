@@ -14,6 +14,7 @@ class JPushManager: NSObject {
     private var isMSGCalculated: Bool = false
     // MARK: LifeCycle
     static let shared = JPushManager()
+    
     private override init() {}
     
     deinit {
@@ -80,10 +81,10 @@ class JPushManager: NSObject {
 //                tags += [regeocode.province, regeocode.city, regeocode.citycode]
 //            }
         
-            JPUSHService.setTags(tags, completion: { (code, iTags, seq) in
+            JPUSHService.setTags(tags, completion: { code, iTags, seq in
                 log.debug("极光回调：tags 绑定成功：\(iTags?.description ?? "")")
             }, seq: 1)
-            JPUSHService.setAlias(alias, completion: { (code, iAlias, seq) in
+            JPUSHService.setAlias(alias, completion: { code, iAlias, seq in
                 log.debug("极光回调：alias 绑定成功：\(iAlias?.description ?? "")")
             }, seq: 1)
 //        }

@@ -40,7 +40,6 @@ class WebController: ViewController {
         self.type = type
         super.init(nibName: nil, bundle: nil)
     }
-    
     @available(*, unavailable, message: "不能使用 nib 初始化!")
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -52,6 +51,13 @@ class WebController: ViewController {
 //        addCloseBackItem()
         makeUI()
         loadURL()
+        // 监听加载进度
+        webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
+//        webView.observe(\.estimatedProgress) { [unowned self] obj, change in
+//            if self.progressView.progress != 1.0 {
+//                self.progressView.setProgress(Float(change.newValue ?? 0), animated: true)
+//            }
+//        }
     }
     
     public override func viewDidLayoutSubviews() {
@@ -70,7 +76,6 @@ class WebController: ViewController {
     deinit {
         webView.removeObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress))
     }
-    
     
     // MARK: - Action
     /// 设置进度条
@@ -117,9 +122,6 @@ private extension WebController {
         
         view.addSubview(webView)
         view.addSubview(progressView)
-        
-        // 监听加载进度
-        webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
     }
     
     func loadURL() {
@@ -146,6 +148,7 @@ private extension WebController {
 
 // MARK: - WKUIDelegate, WKNavigationDelegate
 extension WebController: WKUIDelegate, WKNavigationDelegate {
+    
     public func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         progressView.progress = 0.0
         progressView.isHidden = false

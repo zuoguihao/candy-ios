@@ -15,13 +15,14 @@ class DatabaseManager {
     
     ///单例
     static let shared = DatabaseManager()
+    
     private init() {
         #if DEBUG
         debugPrint("DBFiles Path：\(dbPath)")
         #endif
     }
     
-    private let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
+    private let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String ?? ""
     private lazy var dbPath = NSHomeDirectory() + "/Documents/" + "JLDBFiles" + "/"
     private lazy var database: Database = Database(withPath: dbPath + namespace + ".db")
     
@@ -216,7 +217,7 @@ extension DatabaseManager {
                 try shared.database.removeFiles()
             }
             return true
-        } catch  {
+        } catch {
             debugPrint("removeFiles error:", error)
             return false
         }

@@ -11,7 +11,6 @@ import UIKit
 class UGCVideoController: ViewController {
     // MARK: - Property
     
-    
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +18,7 @@ class UGCVideoController: ViewController {
         makeUI()
     }
     
-    
     // MARK: - Action
-    
     
     // MARK: - Lazy
     

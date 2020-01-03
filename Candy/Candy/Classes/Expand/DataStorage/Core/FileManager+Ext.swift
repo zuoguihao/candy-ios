@@ -18,7 +18,7 @@ public extension FileManager {
     
     /// 命名空间
     private var namespace: String {
-        return Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
+        return Bundle.main.infoDictionary!["CFBundleExecutable"] as? String ?? ""
     }
         
     /// 合并文件路径
@@ -47,7 +47,7 @@ public extension FileManager {
             createFile(atPath: fileAllPath, contents: nil, attributes: nil)
             
             if suffixName == ".jpg" {
-                
+                // swiftlint:disable:next force_cast
                 try? (file as! UIImage).pngData()?.write(to: URL(fileURLWithPath: fileAllPath))
                 return true
             } else {
@@ -139,7 +139,7 @@ public extension FileManager {
     /// - Parameter file: 文件
     /// - Returns: 后缀名称
     private func createAFileNameSuffixBasedOnTheFileType(with file: Any) -> String? {
-        
+        // swiftlint:disable:next syntactic_sugar
         if file is Dictionary<String, Any> || file is Array<AnyObject> {
             return ".plist"
         } else if file is String {

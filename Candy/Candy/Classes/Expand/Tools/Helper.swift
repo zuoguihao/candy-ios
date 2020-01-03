@@ -17,7 +17,7 @@ func kw(_ value: CGFloat) -> CGFloat {
 //    return CGFloat(Int(UIScreen.main.bounds.width / 375 * value))
 }
 
-//MARK: - 全局打电话
+// MARK: - 全局打电话
 /// 全局打电话
 ///
 /// - parameter phoneNumber: 要拨打的电话号码
@@ -27,16 +27,14 @@ func global_phone(with phoneNumber: String, isShowActionSheet: Bool = true) {
 //    // 判断用户是否登录，未登录，则拨打公司座机，登录，则拨打对应的交易员电话
 //    webView.load(URLRequest(url: URL(string: "tel://\(phoneNumber)")!))
 //    global_getTopViewController()?.view.addSubview(webView)
-    
     // 方式二：
     if isShowActionSheet {
-        UIAlertController.show(title: "拨打电话：", message: nil, preferredStyle: .actionSheet, cancelTitle: "取消", cancelHandler: nil, confirmTitle: phoneNumber) { (_) in
+        UIAlertController.show(title: "拨打电话：", message: nil, preferredStyle: .actionSheet, cancelTitle: "取消", cancelHandler: nil, confirmTitle: phoneNumber) { _ in
             callPhone(phoneNumber: phoneNumber)
         }
     } else {
         callPhone(phoneNumber: phoneNumber)
     }
-    
 }
 
 private func callPhone(phoneNumber: String) {
@@ -56,13 +54,9 @@ func global_isReleaseVersion() -> Bool {
 
 public func global_goToAppStore(with urlStr: String) {
     if let url = URL(string: urlStr) {
-        UIApplication.shared.open(url, options: [:]) { (_) in
-            
+        UIApplication.shared.open(url, options: [:]) { _ in
         }
     }
-    
 }
 
-//MARK: - 全局展示警告框
-
-
+// MARK: - 全局展示警告框

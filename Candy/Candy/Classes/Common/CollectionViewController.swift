@@ -14,7 +14,5 @@ class CollectionViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
     }
-    
 }

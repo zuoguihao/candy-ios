@@ -6,7 +6,6 @@
 //  Copyright © 2018 找油网. All rights reserved.
 //
 
-
 import UIKit
 import ESTabBarController_swift
 
@@ -49,29 +48,27 @@ class TabBarBasicContentView: ESTabBarItemContentView {
         fatalError("init(coder:) has not been implemented")
     }
         
-    override func selectAnimation(animated: Bool, completion: (() -> ())?) {
+    override func selectAnimation(animated: Bool, completion: (() -> Void)?) {
         self.bounceAnimation()
         completion?()
     }
 
-    override func reselectAnimation(animated: Bool, completion: (() -> ())?) {
+    override func reselectAnimation(animated: Bool, completion: (() -> Void)?) {
         self.bounceAnimation()
         completion?()
     }
     
     func bounceAnimation() {
         let scale = CAKeyframeAnimation(keyPath: "transform.scale")
-        scale.values = [1.0 ,1.4, 0.9, 1.15, 0.95, 1.02, 1.0]
-        scale.duration = kTime.duration * 2
+        scale.values = [1.0, 1.4, 0.9, 1.15, 0.95, 1.02, 1.0]
+        scale.duration = KTime.duration * 2
         scale.calculationMode = CAAnimationCalculationMode.cubic
         imageView.layer.add(scale, forKey: nil)
     }
         
     // MARK: - Action
-    
-    
     /********小红点动画**********/
-    override func badgeChangedAnimation(animated: Bool, completion: (() -> ())?) {
+    override func badgeChangedAnimation(animated: Bool, completion: (() -> Void)?) {
         super.badgeChangedAnimation(animated: animated, completion: nil)
         notificationAnimation()
     }
@@ -79,15 +76,14 @@ class TabBarBasicContentView: ESTabBarItemContentView {
     func notificationAnimation() {
         // item icon 动画
         let imageAnimation = CAKeyframeAnimation(keyPath: "transform.translation.y")
-        imageAnimation.values = [0.0 ,-8.0, 4.0, -4.0, 3.0, -2.0, 0.0]
-        imageAnimation.duration = kTime.duration * 2
+        imageAnimation.values = [0.0, -8.0, 4.0, -4.0, 3.0, -2.0, 0.0]
+        imageAnimation.duration = KTime.duration * 2
         imageAnimation.calculationMode = CAAnimationCalculationMode.cubic
         imageView.layer.add(imageAnimation, forKey: nil)
-        
         // badgeView 动画
         let bageAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
-        bageAnimation.values = [1.0 ,1.4, 0.9, 1.15, 0.95, 1.02, 1.0]
-        bageAnimation.duration = kTime.duration * 2
+        bageAnimation.values = [1.0, 1.4, 0.9, 1.15, 0.95, 1.02, 1.0]
+        bageAnimation.duration = KTime.duration * 2
         bageAnimation.calculationMode = CAAnimationCalculationMode.cubic
         self.badgeView.layer.add(bageAnimation, forKey: nil)
     }
@@ -99,7 +95,6 @@ class TabBarIrregularityContentView: ESTabBarItemContentView {
     // MARK: - View LifeCycle
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         imageView.backgroundColor = TabBarColor.highlightIcon
         imageView.layer.borderWidth = 3.0
         imageView.layer.borderColor = UIColor.init(white: 235 / 255.0, alpha: 1.0).cgColor
@@ -135,11 +130,11 @@ class TabBarIrregularityContentView: ESTabBarItemContentView {
         self.imageView.center = CGPoint.init(x: self.bounds.size.width / 2.0, y: self.bounds.size.height / 2.0)
     }
     
-    public override func selectAnimation(animated: Bool, completion: (() -> ())?) {
+    public override func selectAnimation(animated: Bool, completion: (() -> Void)?) {
         let view = UIView.init(frame: CGRect.init(origin: CGPoint.zero, size: CGSize(width: 2.0, height: 2.0)))
         view.layer.cornerRadius = 1.0
         view.layer.opacity = 0.5
-        view.backgroundColor = UIColor.init(red: 10/255.0, green: 66/255.0, blue: 91/255.0, alpha: 1.0)
+        view.backgroundColor = UIColor.init(red: 10 / 255.0, green: 66 / 255.0, blue: 91 / 255.0, alpha: 1.0)
         self.addSubview(view)
         playMaskAnimation(animateView: view, target: self.imageView, completion: {
             [weak view] in
@@ -148,15 +143,15 @@ class TabBarIrregularityContentView: ESTabBarItemContentView {
         })
     }
     
-    public override func reselectAnimation(animated: Bool, completion: (() -> ())?) {
+    public override func reselectAnimation(animated: Bool, completion: (() -> Void)?) {
         completion?()
     }
     
-    public override func deselectAnimation(animated: Bool, completion: (() -> ())?) {
+    public override func deselectAnimation(animated: Bool, completion: (() -> Void)?) {
         completion?()
     }
     
-    public override func highlightAnimation(animated: Bool, completion: (() -> ())?) {
+    public override func highlightAnimation(animated: Bool, completion: (() -> Void)?) {
         UIView.beginAnimations("small", context: nil)
         UIView.setAnimationDuration(0.2)
         let transform = self.imageView.transform.scaledBy(x: 0.8, y: 0.8)
@@ -165,7 +160,7 @@ class TabBarIrregularityContentView: ESTabBarItemContentView {
         completion?()
     }
     
-    public override func dehighlightAnimation(animated: Bool, completion: (() -> ())?) {
+    public override func dehighlightAnimation(animated: Bool, completion: (() -> Void)?) {
         UIView.beginAnimations("big", context: nil)
         UIView.setAnimationDuration(0.2)
         let transform = CGAffineTransform.identity
@@ -174,9 +169,8 @@ class TabBarIrregularityContentView: ESTabBarItemContentView {
         completion?()
     }
     
-    private func playMaskAnimation(animateView view: UIView, target: UIView, completion: (() -> ())?) {
+    private func playMaskAnimation(animateView view: UIView, target: UIView, completion: (() -> Void)?) {
         view.center = CGPoint.init(x: target.frame.origin.x + target.frame.size.width / 2.0, y: target.frame.origin.y + target.frame.size.height / 2.0)
-        
         
         let scale = CABasicAnimation.init(keyPath: "transform.scale")
         scale.fromValue = 1.0

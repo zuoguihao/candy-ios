@@ -11,5 +11,4 @@ import NVActivityIndicatorView
 
 struct ViewModel {
 //    let loading = A
-    
 }

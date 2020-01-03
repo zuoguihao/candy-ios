@@ -14,8 +14,6 @@ class TableViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
     }
-    
 
 }

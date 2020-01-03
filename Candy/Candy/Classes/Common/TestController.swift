@@ -10,18 +10,13 @@ import UIKit
 
 class TestController: ViewController {
     // MARK: - Property
-    
-    
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         makeUI()
     }
     
-    
     // MARK: - Action
-    
     
     // MARK: - Lazy
     
@@ -29,7 +24,6 @@ class TestController: ViewController {
 
 // MARK: - Private Method
 private extension TestController {
-    
     func makeUI() {
         
     }

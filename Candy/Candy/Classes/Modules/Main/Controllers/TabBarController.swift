@@ -13,7 +13,6 @@ import ESTabBarController_swift
 class TabBarController: ESTabBarController {
     // MARK: - Property
     
-    
     // MARK: - LifeCycle
     override var shouldAutorotate: Bool {
         return selectedViewController?.shouldAutorotate ?? true
@@ -30,9 +29,7 @@ class TabBarController: ESTabBarController {
         setupTabBar()
     }
     
-    
     // MARK: - Action
-    
     
     // MARK: - Lazy
     
@@ -62,7 +59,6 @@ private extension TabBarController {
         }
         let vc = cls.init()
         
-        
 //        let itemView = isRegular ? TabBarBasicContentView() : TabBarIrregularityContentView()
         vc.tabBarItem = ESTabBarItem.init(TabBarBasicContentView(),
                                           title: model.title,
@@ -86,6 +82,5 @@ private extension TabBarController {
                 .foregroundColor: UIColor.App.master
             ], for: .selected)
         }
-        
     }
 }

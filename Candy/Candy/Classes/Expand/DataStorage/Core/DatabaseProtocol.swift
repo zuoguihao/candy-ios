@@ -56,8 +56,8 @@ public extension DatabaseProtocol where Self: TableCodable {
     @discardableResult
     func insertOrReplace(on propertyConvertibleList: [PropertyConvertible]? = nil) -> Bool {
         return DatabaseManager.shared.insertOrReplace(objects: [self],
-                                                on: propertyConvertibleList,
-                                                intoTable: tableName)
+                                                      on: propertyConvertibleList,
+                                                      intoTable: tableName)
     }
     
     /// 删除操作 如只设置表名 表示需要删除整个表的数据
@@ -70,10 +70,11 @@ public extension DatabaseProtocol where Self: TableCodable {
     /// - Returns: 是否成功
     @discardableResult
     static func delete(where condition: Condition? = nil,
-                              orderBy orderList: [OrderBy]? = nil,
-                              limit: Limit? = nil,
-                              offset: Offset? = nil) -> Bool {
-        return DatabaseManager.shared.delete(fromTable: "\(Self.self)",
+                       orderBy orderList: [OrderBy]? = nil,
+                       limit: Limit? = nil,
+                       offset: Offset? = nil) -> Bool {
+        return DatabaseManager.shared.delete(
+            fromTable: "\(Self.self)",
             where: condition,
             orderBy: orderList,
             limit: limit,
@@ -97,12 +98,12 @@ public extension DatabaseProtocol where Self: TableCodable {
         limit: Limit? = nil,
         offset: Offset? = nil) -> Bool {
         return DatabaseManager.shared.update(table: tableName,
-                                       on: propertyConvertibleList,
-                                       with: self,
-                                       where: condition,
-                                       orderBy: orderList,
-                                       limit: limit,
-                                       offset: offset)
+                                             on: propertyConvertibleList,
+                                             with: self,
+                                             where: condition,
+                                             orderBy: orderList,
+                                             limit: limit,
+                                             offset: offset)
     }
     
     /// 获取操作
@@ -120,7 +121,8 @@ public extension DatabaseProtocol where Self: TableCodable {
         orderBy orderList: [OrderBy]? = nil,
         limit: Limit? = nil,
         offset: Offset? = nil) -> [Self]? {
-        return DatabaseManager.shared.getObjects(table: "\(Self.self)",
+        return DatabaseManager.shared.getObjects(
+            table: "\(Self.self)",
             on: propertyConvertibleList,
             where: condition,
             orderBy: orderList,
@@ -137,7 +139,8 @@ public extension DatabaseProtocol where Self: TableCodable {
     static func getObject(
         on propertyConvertibleList: [PropertyConvertible] = [],
         where condition: Condition) -> Self? {
-        return DatabaseManager.shared.getObjects(table: "\(Self.self)",
+        return DatabaseManager.shared.getObjects(
+            table: "\(Self.self)",
             on: propertyConvertibleList,
             where: condition,
             orderBy: nil,
@@ -205,4 +208,3 @@ public extension Array where Element: DatabaseProtocol & TableCodable {
     }
     
 }
-

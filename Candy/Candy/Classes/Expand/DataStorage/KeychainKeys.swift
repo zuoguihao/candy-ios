@@ -12,9 +12,10 @@ import KeychainSwift
 struct Keychains {
     
     static let bundleID = Bundle.main.appBundleID
-    private init () {}
-    private static let keychain = KeychainSwift()
     
+    private init () {}
+    
+    private static let keychain = KeychainSwift()
     
     /// APP唯一标识。结合Keychain保证UUID的唯一性
     static var uuid: String {

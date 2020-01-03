@@ -8,7 +8,6 @@
 
 import Foundation
 
-// FIXME: - [by jialin]这里打包时记得更新值相应的包
 /// 标记打包时，如果本地没有存储host 的默认 host
 //var kHost: HostType = HostType(rawValue: Defaults.hostType ?? HostType.dev.rawValue)!
 
@@ -38,7 +37,6 @@ struct Configs {
         /// Bugly
         static let bugly = ""
     }
-    
 }
 
 extension UIScreen {
@@ -74,7 +72,6 @@ extension CGFloat {
         }
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
-    
     /// 文本距离边框内间距
     static let inset: CGFloat = 15
     /// 圆角值
@@ -102,7 +99,7 @@ extension CGFloat {
     static let d60: CGFloat = 60
 }
 
-struct kTime {
+struct KTime {
     /// 0.1秒
     static let sec01: TimeInterval = 0.1
     /// 动画时长：0.25秒
