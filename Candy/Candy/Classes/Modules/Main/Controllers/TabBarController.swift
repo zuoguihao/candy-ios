@@ -66,7 +66,7 @@ private extension TabBarController {
                                           selectedImage: UIImage.init(named: model.imageName + "_selected"),
                                           tag: 0)
 
-        vc.title = model.title
+        vc.title = model.title.localized()
         return NavigationController(rootViewController: vc)
     }
 

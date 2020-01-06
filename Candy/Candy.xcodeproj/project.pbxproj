@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		0A2495006058B32FB773F167 /* Pods_Candy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A8C91FBAF23C69BB45F5E6 /* Pods_Candy.framework */; };
 		EF015B7E23BD8743002D1BEC /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF015B7D23BD8743002D1BEC /* WebController.swift */; };
+		EF4FA79523C38B410081E6C9 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FA79423C38B410081E6C9 /* ViewModelable.swift */; };
+		EF4FA79723C38BE60081E6C9 /* UserCenterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FA79623C38BE60081E6C9 /* UserCenterViewModel.swift */; };
+		EF4FA79923C38C690081E6C9 /* RefreshViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FA79823C38C690081E6C9 /* RefreshViewModel.swift */; };
+		EF4FA79D23C3924A0081E6C9 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FA79C23C3924A0081E6C9 /* LoginController.swift */; };
+		EF4FA79F23C392580081E6C9 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FA79E23C392580081E6C9 /* RegisterController.swift */; };
+		EF4FA7A123C394CA0081E6C9 /* ClassName+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FA7A023C394CA0081E6C9 /* ClassName+Ext.swift */; };
+		EF4FA7A323C3A1090081E6C9 /* ListEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FA7A223C3A1090081E6C9 /* ListEditController.swift */; };
+		EF4FA7A523C3A11F0081E6C9 /* QueryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FA7A423C3A11F0081E6C9 /* QueryController.swift */; };
 		EF54FE9823BBAED6004292EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF54FE9723BBAED6004292EF /* AppDelegate.swift */; };
 		EF54FEA123BBAED6004292EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF54FEA023BBAED6004292EF /* Assets.xcassets */; };
 		EF54FEA423BBAED6004292EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF54FEA223BBAED6004292EF /* LaunchScreen.storyboard */; };
@@ -56,6 +64,14 @@
 		20A8C91FBAF23C69BB45F5E6 /* Pods_Candy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Candy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A05F5CC025D5E5E510AFED /* Pods-Candy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candy.release.xcconfig"; path = "Target Support Files/Pods-Candy/Pods-Candy.release.xcconfig"; sourceTree = "<group>"; };
 		EF015B7D23BD8743002D1BEC /* WebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
+		EF4FA79423C38B410081E6C9 /* ViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
+		EF4FA79623C38BE60081E6C9 /* UserCenterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCenterViewModel.swift; sourceTree = "<group>"; };
+		EF4FA79823C38C690081E6C9 /* RefreshViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshViewModel.swift; sourceTree = "<group>"; };
+		EF4FA79C23C3924A0081E6C9 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		EF4FA79E23C392580081E6C9 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		EF4FA7A023C394CA0081E6C9 /* ClassName+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClassName+Ext.swift"; sourceTree = "<group>"; };
+		EF4FA7A223C3A1090081E6C9 /* ListEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEditController.swift; sourceTree = "<group>"; };
+		EF4FA7A423C3A11F0081E6C9 /* QueryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryController.swift; sourceTree = "<group>"; };
 		EF54FE9423BBAED6004292EF /* Candy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Candy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF54FE9723BBAED6004292EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF54FEA023BBAED6004292EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,6 +148,23 @@
 				D7A05F5CC025D5E5E510AFED /* Pods-Candy.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF4FA79A23C3922B0081E6C9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EF4FA79B23C392320081E6C9 /* Controllers */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EF4FA79B23C392320081E6C9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF4FA79C23C3924A0081E6C9 /* LoginController.swift */,
+				EF4FA79E23C392580081E6C9 /* RegisterController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		EF54FE8B23BBAED6004292EF = {
@@ -224,6 +257,7 @@
 			children = (
 				EF5F090D23BC596A002988D6 /* Helper.swift */,
 				EF5F08FC23BC2AC9002988D6 /* JPush */,
+				EF4FA79423C38B410081E6C9 /* ViewModelable.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -247,6 +281,7 @@
 				EF5F090523BC573B002988D6 /* UIViewController+Ext.swift */,
 				EF5F090F23BC59FE002988D6 /* UIAlertController+Ext.swift */,
 				EF5880CE23BCFFCC00CAD196 /* String+Ext.swift */,
+				EF4FA7A023C394CA0081E6C9 /* ClassName+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -284,6 +319,7 @@
 				EFBB1DAD23BD03A4001820B5 /* CollectionViewController.swift */,
 				EF015B7D23BD8743002D1BEC /* WebController.swift */,
 				EF64898323BE380900F14FFA /* ViewModel.swift */,
+				EF4FA79823C38C690081E6C9 /* RefreshViewModel.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -300,6 +336,7 @@
 		EF54FF0623BBB00B004292EF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EF4FA79A23C3922B0081E6C9 /* Login */,
 				EF54FF2F23BBB00C004292EF /* Main */,
 				EF54FF1123BBB00B004292EF /* VideoHall */,
 				EF54FF0723BBB00B004292EF /* Video */,
@@ -403,6 +440,7 @@
 		EF54FF1B23BBB00B004292EF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				EF4FA79623C38BE60081E6C9 /* UserCenterViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -418,6 +456,8 @@
 			isa = PBXGroup;
 			children = (
 				EF54FF2123BBB00C004292EF /* UserCenterController.swift */,
+				EF4FA7A223C3A1090081E6C9 /* ListEditController.swift */,
+				EF4FA7A423C3A11F0081E6C9 /* QueryController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -690,6 +730,7 @@
 			files = (
 				EFBB1DAF23BD03A4001820B5 /* ViewController.swift in Sources */,
 				EF5F091223BC5A45002988D6 /* Notifications.swift in Sources */,
+				EF4FA79723C38BE60081E6C9 /* UserCenterViewModel.swift in Sources */,
 				EF5F08F923BC29A9002988D6 /* AppDelegate+Ext.swift in Sources */,
 				EF54FF4623BBB00C004292EF /* VideoHallController.swift in Sources */,
 				EF5880CD23BCF65100CAD196 /* TestController.swift in Sources */,
@@ -697,6 +738,7 @@
 				EF54FE9823BBAED6004292EF /* AppDelegate.swift in Sources */,
 				EF5F08FE23BC2AD6002988D6 /* JPushManager.swift in Sources */,
 				EF5F091F23BC5BB6002988D6 /* LogManager.swift in Sources */,
+				EF4FA7A523C3A11F0081E6C9 /* QueryController.swift in Sources */,
 				EFBB1DB123BD03A4001820B5 /* NavigationController.swift in Sources */,
 				EF64898F23BE57E300F14FFA /* R.generated.swift in Sources */,
 				EF64898423BE380900F14FFA /* ViewModel.swift in Sources */,
@@ -712,6 +754,7 @@
 				EF5F090E23BC596A002988D6 /* Helper.swift in Sources */,
 				EF5F091B23BC5A93002988D6 /* DatabaseManager.swift in Sources */,
 				EF5F091C23BC5A93002988D6 /* DatabaseProtocol.swift in Sources */,
+				EF4FA79523C38B410081E6C9 /* ViewModelable.swift in Sources */,
 				EFBB1DB223BD03A4001820B5 /* CollectionViewController.swift in Sources */,
 				EF5880CF23BCFFCC00CAD196 /* String+Ext.swift in Sources */,
 				EFBB1DB323BD03A4001820B5 /* TabBarController.swift in Sources */,
@@ -719,9 +762,14 @@
 				EF5F08FB23BC2A7C002988D6 /* UIColor+Ext.swift in Sources */,
 				EF5F091923BC5A93002988D6 /* DefaultKeys.swift in Sources */,
 				EF5F091023BC59FE002988D6 /* UIAlertController+Ext.swift in Sources */,
+				EF4FA7A323C3A1090081E6C9 /* ListEditController.swift in Sources */,
 				EF54FF4B23BBB00C004292EF /* UserCenterController.swift in Sources */,
+				EF4FA79D23C3924A0081E6C9 /* LoginController.swift in Sources */,
 				EF54FF3823BBB00C004292EF /* LibsManager.swift in Sources */,
 				EF5F090C23BC5846002988D6 /* Bundle+Ext.swift in Sources */,
+				EF4FA79923C38C690081E6C9 /* RefreshViewModel.swift in Sources */,
+				EF4FA7A123C394CA0081E6C9 /* ClassName+Ext.swift in Sources */,
+				EF4FA79F23C392580081E6C9 /* RegisterController.swift in Sources */,
 				EF5F091A23BC5A93002988D6 /* FileManager+Ext.swift in Sources */,
 				EF54FF5A23BBB1A8004292EF /* ImportFile.swift in Sources */,
 				EF54FF5123BBB00C004292EF /* UGCVideoController.swift in Sources */,

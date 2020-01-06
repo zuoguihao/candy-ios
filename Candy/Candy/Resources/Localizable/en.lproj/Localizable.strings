@@ -35,7 +35,7 @@
 "Toast.ConnectionLost.Message" = "No connection";
 
 /* Login */
-//"Login.Navigation.Title" = "Login";
+"Login.Nav.Title" = "Login";
 "Login.BasicSegment.Title" = "Basic";
 "Login.OAuthSegment.Title" = "OAuth";
 "Login.LoginTextField.Placeholder" = "login";
@@ -70,3 +70,18 @@
 
 /* Theme */
 "Theme.Navigation.Title" = "Color theme";
+
+/* VideoHall */
+"VideoHall.Nav.Title" = "VideoHall";
+
+/* Video */
+"Video.Nav.Title" = "Video";
+
+/* UGCVideo */
+"UGCVideo.Nav.Title" = "UGCVideo";
+
+/* UserCenter */
+"UserCenter.Nav.Title" = "User Center";
+"UserCenter.DataSource.Login" = "Regist & Login";
+"UserCenter.DataSource.ListEdit" = "ListEdit";
+"UserCenter.DataSource.Query" = "Query";

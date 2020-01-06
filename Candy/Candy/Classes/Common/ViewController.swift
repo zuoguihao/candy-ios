@@ -8,11 +8,11 @@
 
 import UIKit
 import DZNEmptyDataSet
-import RxSwift
-import RxCocoa
 import Reachability
 
 class ViewController: UIViewController {
+
+    var disposeBag = DisposeBag()
 
     // MARK: - Navigation 相关设置
     /// 是否允许侧滑返回【注意使用系统的手势时，记得在 viewDidAppear 中禁用，在 viewWillDisappear 方法中开启,；hbd 不需要~】
@@ -252,6 +252,15 @@ extension ViewController: DZNEmptyDataSetDelegate {
             return emptyDataSetShouldAllowScroll
         case .wifi:
             return emptyDataSetShouldAllowScroll
+        }
+    }
+}
+
+extension Reactive where Base: ViewController {
+
+    var push: Binder<ViewController.Type> {
+        return Binder(base) { vc, type in
+            vc.navigationController?.pushViewController(type.init())
         }
     }
 }

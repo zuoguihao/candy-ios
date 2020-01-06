@@ -2,22 +2,22 @@
 [
     {
         "clsName": "VideoHallController",
-        "title": "放映厅",
+        "title": "VideoHall.Nav.Title",
         "imageName": "tabbar_hall_video"
     },
     {
         "clsName": "VideoController",
-        "title": "视频",
+        "title": "Video.Nav.Title",
         "imageName": "tabbar_video"
     },
     {
         "clsName": "UGCVideoController",
-        "title": "小视频",
+        "title": "UGCVideo.Nav.Title",
         "imageName": "tabbar_ucg_video"
     },
     {
         "clsName": "UserCenterController",
-        "title": "我的",
+        "title": "UserCenter.Nav.Title",
         "imageName": "tabbar_mine"
     }
 ]

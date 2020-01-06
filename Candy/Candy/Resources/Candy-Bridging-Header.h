@@ -5,6 +5,9 @@
 #ifndef Header_h
 #define Header_h
 
+@import RxSwift;
+@import RxCocoa;
+
 // 极光推送
 #import "JPUSHService.h"
 

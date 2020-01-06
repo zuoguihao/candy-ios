@@ -12,3 +12,5 @@ import Foundation
 @_exported import RxCocoa
 @_exported import NSObject_Rx
 @_exported import RxOptional
+@_exported import SwifterSwift
+@_exported import SnapKit

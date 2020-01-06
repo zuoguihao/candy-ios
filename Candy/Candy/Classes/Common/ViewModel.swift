@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import NVActivityIndicatorView
 
 struct ViewModel {
-//    let loading = A
+
+//    let loading = Activi
 }

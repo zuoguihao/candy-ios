@@ -25,7 +25,7 @@
 "Common.Error" = "错误";
 "Common.NoResults" = "没有结果";
 
-/* Net */
+/* 网络 */
 "Net.NoConnection.Title" = "无可用网络";
 "Net.NoConnection.Desc" = "请检查网络后点击页面刷新";
 "Net.Loading" = "正在拼命加载...";
@@ -35,7 +35,7 @@
 "Toast.ConnectionLost.Message" = "没联系";
 
 /* 登录 */
-//"Login.Navigation.Title" = "Login";
+"Login.Nav.Title" = "登录";
 "Login.BasicSegment.Title" = "基本认证";
 "Login.OAuthSegment.Title" = "OAuth认证";
 "Login.LoginTextField.Placeholder" = "登录";
@@ -70,3 +70,18 @@
 
 /* 主题 */
 "Theme.Navigation.Title" = "颜色主题";
+
+/* 放映厅 */
+"VideoHall.Nav.Title" = "放映厅";
+
+/* 视频 */
+"Video.Nav.Title" = "视频";
+
+/* 小视频 */
+"UGCVideo.Nav.Title" = "小视频";
+
+/* 用户中心 */
+"UserCenter.Nav.Title" = "个人中心";
+"UserCenter.DataSource.Login" = "登录注册";
+"UserCenter.DataSource.ListEdit" = "列表编辑";
+"UserCenter.DataSource.Query" = "搜索及刷新";
