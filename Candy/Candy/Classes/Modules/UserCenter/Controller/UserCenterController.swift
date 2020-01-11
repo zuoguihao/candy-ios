@@ -50,6 +50,7 @@ class UserCenterController: ViewController {
     /// 懒加载：dataSource
     private lazy var dataSource: [(String, ViewController.Type)] = {
         [
+            (R.string.localizable.userCenterDataSourceHomepage(), HomepageController.self),
             (R.string.localizable.userCenterDataSourceLogin(), LoginController.self),
             (R.string.localizable.userCenterDataSourceListEdit(), ListEditController.self),
             (R.string.localizable.userCenterDataSourceQuery(), QueryController.self)

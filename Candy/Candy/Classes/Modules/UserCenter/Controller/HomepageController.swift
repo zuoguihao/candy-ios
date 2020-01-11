@@ -1,14 +1,14 @@
 //
-//  LoginController.swift
+//  HomepageController.swift
 //  Candy
 //
-//  Created by 左聂荣 on 2020/1/7.
+//  Created by 左聂荣 on 2020/1/9.
 //  Copyright © 2020 左聂荣. All rights reserved.
 //
 
 import UIKit
 
-class LoginController: ViewController {
+class HomepageController: ViewController {
     // MARK: - Property
 
     // MARK: - LifeCycle
@@ -25,9 +25,9 @@ class LoginController: ViewController {
 }
 
 // MARK: - Private Method
-private extension LoginController {
+private extension HomepageController {
 
     func makeUI() {
-        navItemTitle = R.string.localizable.loginNavTitle()
+
     }
 }

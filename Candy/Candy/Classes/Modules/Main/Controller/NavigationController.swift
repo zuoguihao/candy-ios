@@ -28,12 +28,12 @@ class NavigationController: UINavigationController {
         super.viewDidLoad()
 
         navigation.configuration.isEnabled = true
-//        navigation.configuration.barTintColor = UIColor.App.bg_FFFFFF
-//        navigation.configuration.isShadowHidden = true
-        navigation.configuration.backItem = Configuration.BackItem(style: .image(UIImage(named: "nav_back")?.withRenderingMode(.alwaysOriginal)))
+        navigation.configuration.barTintColor = UIColor.App.master
+        navigation.configuration.isShadowHidden = true
+        navigation.configuration.backItem = Configuration.BackItem(style: .image(R.image.nav_back_white()))
         navigation.configuration.titleTextAttributes = [
-            .foregroundColor: UIColor.darkText,
-            .font: UIFont.system_19
+            .foregroundColor: UIColor.App.text_FFFFFF,
+            .font: UIFont.fontOfDP(ofSize: 18, weight: .medium)
         ]
     }
 

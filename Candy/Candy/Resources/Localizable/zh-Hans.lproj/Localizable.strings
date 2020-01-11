@@ -36,15 +36,12 @@
 
 /* 登录 */
 "Login.Nav.Title" = "登录";
-"Login.BasicSegment.Title" = "基本认证";
-"Login.OAuthSegment.Title" = "OAuth认证";
-"Login.LoginTextField.Placeholder" = "登录";
-"Login.PasswordTextField.Placeholder" = "密码";
-"Login.BasicLoginButton.Title" = "登录";
-"Login.TitleLabel.Text" = "欢迎来到 糖果视频 ";
-"Login.DetailLabel.Text" = "对于使用基本身份验证或 OAuth 的API请求，您每小时最多可以发出5000次请求。 \n\n对于未认证的请求,它限制您每小时请求最多60次请求。";
-"Login.OAuthloginButton.Title" = "使用 Github 登录";
-"Login.LoginFailed.Description" = "请检查您的登录名或密码";
+"Login.PhoneField.Placeholder" = "请输入手机号";
+"Login.VerifyCodeField.Placeholder" = "请输入验证码";
+"Login.VerifyCodeBtn.Title" = "获取验证码";
+"Register.Nav.Title" = "注册";
+"Register.Nav.Account" = "请输入账号";
+"Register.Nav.Password" = "请输入密码";
 
 /* 设置 */
 "Settings.Navigation.Title" = "设置";
@@ -82,6 +79,7 @@
 
 /* 用户中心 */
 "UserCenter.Nav.Title" = "个人中心";
+"UserCenter.DataSource.Homepage" = "我的主页";
 "UserCenter.DataSource.Login" = "登录注册";
 "UserCenter.DataSource.ListEdit" = "列表编辑";
 "UserCenter.DataSource.Query" = "搜索及刷新";

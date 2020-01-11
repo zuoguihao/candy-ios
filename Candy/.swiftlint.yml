@@ -25,7 +25,7 @@ opt_in_rules: # some rules are only opt-in
   - operator_usage_whitespace # 操作符两边应该有空格。比如 “+” “-” “？？”
   - redundant_nil_coalescing # 使用可能为为nil的可选值时，建议使用: str ?? "", ??左右两侧要有一个空格
   # - trailing_closure # 关于闭包中{}的使用, 推荐使用尾随闭包的语法
-  - unneeded_parentheses_in_closure_argument # 在定义或使用闭包时，闭包参数不建议使用括号()
+  # - unneeded_parentheses_in_closure_argument # 在定义或使用闭包时，闭包参数不建议使用括号()
   - yoda_condition # 执行判断语句时, 变量名应该放在运算符的左边
   - switch_case_alignment # switch-case语句中switch和case应该垂直对齐
   - switch_case_on_newline # 在switch语法里， case应该总是在一个新行上面

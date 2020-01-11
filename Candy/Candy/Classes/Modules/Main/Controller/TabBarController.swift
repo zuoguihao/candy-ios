@@ -73,10 +73,10 @@ private extension TabBarController {
     func setupTabBar() {
         if #available(iOS 13.0, *) {
             tabBar.tintColor = UIColor.App.master
-            tabBar.unselectedItemTintColor = UIColor.App.text_667084
+            tabBar.unselectedItemTintColor = UIColor.App.disabled
         } else {
             UITabBarItem.appearance().setTitleTextAttributes([
-                .foregroundColor: UIColor.App.text_667084
+                .foregroundColor: UIColor.App.disabled
             ], for: .normal)
             UITabBarItem.appearance().setTitleTextAttributes([
                 .foregroundColor: UIColor.App.master

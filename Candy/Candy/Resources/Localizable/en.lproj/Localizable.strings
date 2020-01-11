@@ -36,15 +36,12 @@
 
 /* Login */
 "Login.Nav.Title" = "Login";
-"Login.BasicSegment.Title" = "Basic";
-"Login.OAuthSegment.Title" = "OAuth";
-"Login.LoginTextField.Placeholder" = "login";
-"Login.PasswordTextField.Placeholder" = "password";
-"Login.BasicLoginButton.Title" = "Login";
-"Login.TitleLabel.Text" = "Welcome to Candy";
-"Login.DetailLabel.Text" = "For API requests using Basic Authentication or OAuth, you can make up to 5000 requests per hour. \n\nFor unauthenticated requests, the rate limit allows for up to 60 requests per hour.";
-"Login.OAuthloginButton.Title" = "Sign in with Github";
-"Login.LoginFailed.Description" = "Please check your login or password";
+"Login.PhoneField.Placeholder" = "Please enter your phone number.";
+"Login.VerifyCodeField.Placeholder" = "Please enter the verification code.";
+"Login.VerifyCodeBtn.Title" = "Get verification code.";
+"Register.Nav.Title" = "Register";
+"Register.Nav.Account" = "Please enter your account number.";
+"Register.Nav.Password" = "Please enter your password.";
 
 /* Settings */
 "Settings.Navigation.Title" = "Settings";
@@ -82,6 +79,7 @@
 
 /* UserCenter */
 "UserCenter.Nav.Title" = "User Center";
+"UserCenter.DataSource.Homepage" = "My HomePage";
 "UserCenter.DataSource.Login" = "Regist & Login";
 "UserCenter.DataSource.ListEdit" = "ListEdit";
 "UserCenter.DataSource.Query" = "Query";

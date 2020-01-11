@@ -80,7 +80,7 @@ extension CGFloat {
     /// 按钮高度
     static let button: CGFloat = 40
     /// textField 高度
-    static let textField: CGFloat = 48
+    static let textField: CGFloat = 44
     /// tableView cell 高度
     static let tableRow: CGFloat = 45
     /// 分页器高度
@@ -89,13 +89,12 @@ extension CGFloat {
     static let line: CGFloat = 0.4
 
     static let d08: CGFloat = 8
-    static let d32: CGFloat = 32
-    static let d34: CGFloat = 34
-    static let d40: CGFloat = 40
     static let d10: CGFloat = 10
     static let d18: CGFloat = 18
     static let d25: CGFloat = 25
-    static let d38: CGFloat = 38
+    static let d30: CGFloat = 30
+    static let d32: CGFloat = 32
+    static let d40: CGFloat = 40
     static let d60: CGFloat = 60
 }
 

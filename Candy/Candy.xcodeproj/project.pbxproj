@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		0A2495006058B32FB773F167 /* Pods_Candy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A8C91FBAF23C69BB45F5E6 /* Pods_Candy.framework */; };
 		EF015B7E23BD8743002D1BEC /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF015B7D23BD8743002D1BEC /* WebController.swift */; };
+		EF015C8923CA269500B241EE /* UIState+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF015C8823CA269500B241EE /* UIState+Rx.swift */; };
+		EF015C8B23CA2EF700B241EE /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF015C8A23CA2EF700B241EE /* UIViewController+Rx.swift */; };
+		EF015C8E23CA34A000B241EE /* LoginValidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF015C8D23CA34A000B241EE /* LoginValidate.swift */; };
+		EF015C9023CA35BE00B241EE /* ValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF015C8F23CA35BE00B241EE /* ValidatorError.swift */; };
+		EF0397EE23C8C6CC00E32EB4 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0397ED23C8C6CC00E32EB4 /* UIButton+Ext.swift */; };
+		EF0397F023C8C73900E32EB4 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0397EF23C8C73900E32EB4 /* UIImage+Ext.swift */; };
+		EF0397F323C8D47400E32EB4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0397F223C8D47400E32EB4 /* LoginViewModel.swift */; };
+		EF4E684423C63D3B00726D5E /* HomepageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E684323C63D3B00726D5E /* HomepageController.swift */; };
+		EF4E684623C63EB000726D5E /* EffectTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E684523C63EB000726D5E /* EffectTextField.swift */; };
+		EF4E684823C63F0800726D5E /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E684723C63F0800726D5E /* UITextField+Ext.swift */; };
 		EF4FA79523C38B410081E6C9 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FA79423C38B410081E6C9 /* ViewModelable.swift */; };
 		EF4FA79723C38BE60081E6C9 /* UserCenterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FA79623C38BE60081E6C9 /* UserCenterViewModel.swift */; };
 		EF4FA79923C38C690081E6C9 /* RefreshViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FA79823C38C690081E6C9 /* RefreshViewModel.swift */; };
@@ -64,6 +74,16 @@
 		20A8C91FBAF23C69BB45F5E6 /* Pods_Candy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Candy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A05F5CC025D5E5E510AFED /* Pods-Candy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candy.release.xcconfig"; path = "Target Support Files/Pods-Candy/Pods-Candy.release.xcconfig"; sourceTree = "<group>"; };
 		EF015B7D23BD8743002D1BEC /* WebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
+		EF015C8823CA269500B241EE /* UIState+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIState+Rx.swift"; sourceTree = "<group>"; };
+		EF015C8A23CA2EF700B241EE /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		EF015C8D23CA34A000B241EE /* LoginValidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidate.swift; sourceTree = "<group>"; };
+		EF015C8F23CA35BE00B241EE /* ValidatorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorError.swift; sourceTree = "<group>"; };
+		EF0397ED23C8C6CC00E32EB4 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		EF0397EF23C8C73900E32EB4 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		EF0397F223C8D47400E32EB4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EF4E684323C63D3B00726D5E /* HomepageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageController.swift; sourceTree = "<group>"; };
+		EF4E684523C63EB000726D5E /* EffectTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectTextField.swift; sourceTree = "<group>"; };
+		EF4E684723C63F0800726D5E /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
 		EF4FA79423C38B410081E6C9 /* ViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
 		EF4FA79623C38BE60081E6C9 /* UserCenterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCenterViewModel.swift; sourceTree = "<group>"; };
 		EF4FA79823C38C690081E6C9 /* RefreshViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshViewModel.swift; sourceTree = "<group>"; };
@@ -150,21 +170,39 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EF015C8C23CA348800B241EE /* Validate */ = {
+			isa = PBXGroup;
+			children = (
+				EF015C8D23CA34A000B241EE /* LoginValidate.swift */,
+				EF015C8F23CA35BE00B241EE /* ValidatorError.swift */,
+			);
+			path = Validate;
+			sourceTree = "<group>";
+		};
+		EF0397F123C8D3BD00E32EB4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF0397F223C8D47400E32EB4 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		EF4FA79A23C3922B0081E6C9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				EF4FA79B23C392320081E6C9 /* Controllers */,
+				EF0397F123C8D3BD00E32EB4 /* ViewModel */,
+				EF4FA79B23C392320081E6C9 /* Controller */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		EF4FA79B23C392320081E6C9 /* Controllers */ = {
+		EF4FA79B23C392320081E6C9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				EF4FA79C23C3924A0081E6C9 /* LoginController.swift */,
 				EF4FA79E23C392580081E6C9 /* RegisterController.swift */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		EF54FE8B23BBAED6004292EF = {
@@ -223,7 +261,7 @@
 		EF54FEF123BBB00B004292EF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				EF54FEF223BBB00B004292EF /* Routers */,
+				EF54FEF223BBB00B004292EF /* Router */,
 				EF54FF0623BBB00B004292EF /* Modules */,
 				EF54FF0223BBB00B004292EF /* Common */,
 				EF54FF0423BBB00B004292EF /* Configs */,
@@ -233,11 +271,11 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		EF54FEF223BBB00B004292EF /* Routers */ = {
+		EF54FEF223BBB00B004292EF /* Router */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Routers;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		EF54FEF423BBB00B004292EF /* Expand */ = {
@@ -255,9 +293,11 @@
 		EF54FEF523BBB00B004292EF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				EF015C8C23CA348800B241EE /* Validate */,
 				EF5F090D23BC596A002988D6 /* Helper.swift */,
 				EF5F08FC23BC2AC9002988D6 /* JPush */,
 				EF4FA79423C38B410081E6C9 /* ViewModelable.swift */,
+				EF4E684523C63EB000726D5E /* EffectTextField.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -282,6 +322,11 @@
 				EF5F090F23BC59FE002988D6 /* UIAlertController+Ext.swift */,
 				EF5880CE23BCFFCC00CAD196 /* String+Ext.swift */,
 				EF4FA7A023C394CA0081E6C9 /* ClassName+Ext.swift */,
+				EF4E684723C63F0800726D5E /* UITextField+Ext.swift */,
+				EF0397ED23C8C6CC00E32EB4 /* UIButton+Ext.swift */,
+				EF0397EF23C8C73900E32EB4 /* UIImage+Ext.swift */,
+				EF015C8823CA269500B241EE /* UIState+Rx.swift */,
+				EF015C8A23CA2EF700B241EE /* UIViewController+Rx.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -349,190 +394,191 @@
 		EF54FF0723BBB00B004292EF /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				EF54FF0823BBB00B004292EF /* ViewModels */,
-				EF54FF0A23BBB00B004292EF /* Models */,
-				EF54FF0C23BBB00B004292EF /* Controllers */,
-				EF54FF0F23BBB00B004292EF /* Views */,
+				EF54FF0823BBB00B004292EF /* ViewModel */,
+				EF54FF0A23BBB00B004292EF /* Model */,
+				EF54FF0C23BBB00B004292EF /* Controller */,
+				EF54FF0F23BBB00B004292EF /* View */,
 			);
 			path = Video;
 			sourceTree = "<group>";
 		};
-		EF54FF0823BBB00B004292EF /* ViewModels */ = {
+		EF54FF0823BBB00B004292EF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ViewModels;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		EF54FF0A23BBB00B004292EF /* Models */ = {
+		EF54FF0A23BBB00B004292EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		EF54FF0C23BBB00B004292EF /* Controllers */ = {
+		EF54FF0C23BBB00B004292EF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				EF54FF0E23BBB00B004292EF /* VideoController.swift */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		EF54FF0F23BBB00B004292EF /* Views */ = {
+		EF54FF0F23BBB00B004292EF /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 		EF54FF1123BBB00B004292EF /* VideoHall */ = {
 			isa = PBXGroup;
 			children = (
-				EF54FF1223BBB00B004292EF /* ViewModels */,
-				EF54FF1423BBB00B004292EF /* Models */,
-				EF54FF1623BBB00B004292EF /* Controllers */,
-				EF54FF1823BBB00B004292EF /* Views */,
+				EF54FF1223BBB00B004292EF /* ViewModel */,
+				EF54FF1423BBB00B004292EF /* Model */,
+				EF54FF1623BBB00B004292EF /* Controller */,
+				EF54FF1823BBB00B004292EF /* View */,
 			);
 			path = VideoHall;
 			sourceTree = "<group>";
 		};
-		EF54FF1223BBB00B004292EF /* ViewModels */ = {
+		EF54FF1223BBB00B004292EF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ViewModels;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		EF54FF1423BBB00B004292EF /* Models */ = {
+		EF54FF1423BBB00B004292EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		EF54FF1623BBB00B004292EF /* Controllers */ = {
+		EF54FF1623BBB00B004292EF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				EF54FF1723BBB00B004292EF /* VideoHallController.swift */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		EF54FF1823BBB00B004292EF /* Views */ = {
+		EF54FF1823BBB00B004292EF /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 		EF54FF1A23BBB00B004292EF /* UserCenter */ = {
 			isa = PBXGroup;
 			children = (
-				EF54FF1B23BBB00B004292EF /* ViewModels */,
-				EF54FF1D23BBB00B004292EF /* Models */,
-				EF54FF1F23BBB00B004292EF /* Controllers */,
-				EF54FF2223BBB00C004292EF /* Views */,
+				EF54FF1B23BBB00B004292EF /* ViewModel */,
+				EF54FF1D23BBB00B004292EF /* Model */,
+				EF54FF1F23BBB00B004292EF /* Controller */,
+				EF54FF2223BBB00C004292EF /* View */,
 			);
 			path = UserCenter;
 			sourceTree = "<group>";
 		};
-		EF54FF1B23BBB00B004292EF /* ViewModels */ = {
+		EF54FF1B23BBB00B004292EF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				EF4FA79623C38BE60081E6C9 /* UserCenterViewModel.swift */,
 			);
-			path = ViewModels;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		EF54FF1D23BBB00B004292EF /* Models */ = {
+		EF54FF1D23BBB00B004292EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		EF54FF1F23BBB00B004292EF /* Controllers */ = {
+		EF54FF1F23BBB00B004292EF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				EF54FF2123BBB00C004292EF /* UserCenterController.swift */,
+				EF4E684323C63D3B00726D5E /* HomepageController.swift */,
 				EF4FA7A223C3A1090081E6C9 /* ListEditController.swift */,
 				EF4FA7A423C3A11F0081E6C9 /* QueryController.swift */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		EF54FF2223BBB00C004292EF /* Views */ = {
+		EF54FF2223BBB00C004292EF /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 		EF54FF2523BBB00C004292EF /* UGCVideo */ = {
 			isa = PBXGroup;
 			children = (
-				EF54FF2623BBB00C004292EF /* ViewModels */,
-				EF54FF2823BBB00C004292EF /* Models */,
-				EF54FF2A23BBB00C004292EF /* Controllers */,
-				EF54FF2D23BBB00C004292EF /* Views */,
+				EF54FF2623BBB00C004292EF /* ViewModel */,
+				EF54FF2823BBB00C004292EF /* Model */,
+				EF54FF2A23BBB00C004292EF /* Controller */,
+				EF54FF2D23BBB00C004292EF /* View */,
 			);
 			path = UGCVideo;
 			sourceTree = "<group>";
 		};
-		EF54FF2623BBB00C004292EF /* ViewModels */ = {
+		EF54FF2623BBB00C004292EF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ViewModels;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		EF54FF2823BBB00C004292EF /* Models */ = {
+		EF54FF2823BBB00C004292EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		EF54FF2A23BBB00C004292EF /* Controllers */ = {
+		EF54FF2A23BBB00C004292EF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				EF54FF2C23BBB00C004292EF /* UGCVideoController.swift */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		EF54FF2D23BBB00C004292EF /* Views */ = {
+		EF54FF2D23BBB00C004292EF /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 		EF54FF2F23BBB00C004292EF /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				EFBB1DA923BD03A4001820B5 /* Controllers */,
-				EF5880C923BCF53F00CAD196 /* Views */,
-				EF5880C223BCE7C400CAD196 /* Models */,
+				EFBB1DA923BD03A4001820B5 /* Controller */,
+				EF5880C923BCF53F00CAD196 /* View */,
+				EF5880C223BCE7C400CAD196 /* Model */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		EF5880C223BCE7C400CAD196 /* Models */ = {
+		EF5880C223BCE7C400CAD196 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				EF5880C323BCE7E500CAD196 /* TabBarItemModel.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		EF5880C923BCF53F00CAD196 /* Views */ = {
+		EF5880C923BCF53F00CAD196 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				EF5880CA23BCF55800CAD196 /* TabbarContentView.swift */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 		EF5F08FC23BC2AC9002988D6 /* JPush */ = {
@@ -562,13 +608,13 @@
 			path = Localizable;
 			sourceTree = "<group>";
 		};
-		EFBB1DA923BD03A4001820B5 /* Controllers */ = {
+		EFBB1DA923BD03A4001820B5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				EFBB1DAE23BD03A4001820B5 /* TabBarController.swift */,
 				EFBB1DAC23BD03A4001820B5 /* NavigationController.swift */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -580,7 +626,7 @@
 			buildPhases = (
 				B2419E13CD17638279EE20D3 /* [CP] Check Pods Manifest.lock */,
 				EF64898D23BE562200F14FFA /* R.Swift */,
-				EFDCDB7B23BF88BE003FC597 /* ShellScript */,
+				EFDCDB7B23BF88BE003FC597 /* SwiftLint */,
 				EF54FE9023BBAED6004292EF /* Sources */,
 				EF54FE9123BBAED6004292EF /* Frameworks */,
 				EF54FE9223BBAED6004292EF /* Resources */,
@@ -704,7 +750,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Candy/Resources/R.generated.swift\"\n";
 		};
-		EFDCDB7B23BF88BE003FC597 /* ShellScript */ = {
+		EFDCDB7B23BF88BE003FC597 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -713,6 +759,7 @@
 			);
 			inputPaths = (
 			);
+			name = SwiftLint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -736,19 +783,24 @@
 				EF5880CD23BCF65100CAD196 /* TestController.swift in Sources */,
 				EF5F091D23BC5A93002988D6 /* KeychainKeys.swift in Sources */,
 				EF54FE9823BBAED6004292EF /* AppDelegate.swift in Sources */,
+				EF4E684623C63EB000726D5E /* EffectTextField.swift in Sources */,
 				EF5F08FE23BC2AD6002988D6 /* JPushManager.swift in Sources */,
 				EF5F091F23BC5BB6002988D6 /* LogManager.swift in Sources */,
 				EF4FA7A523C3A11F0081E6C9 /* QueryController.swift in Sources */,
+				EF4E684423C63D3B00726D5E /* HomepageController.swift in Sources */,
 				EFBB1DB123BD03A4001820B5 /* NavigationController.swift in Sources */,
 				EF64898F23BE57E300F14FFA /* R.generated.swift in Sources */,
 				EF64898423BE380900F14FFA /* ViewModel.swift in Sources */,
 				EF54FF4223BBB00C004292EF /* VideoController.swift in Sources */,
 				EF5F090023BC2AE5002988D6 /* JPushModel.swift in Sources */,
 				EF5880C423BCE7E500CAD196 /* TabBarItemModel.swift in Sources */,
+				EF4E684823C63F0800726D5E /* UITextField+Ext.swift in Sources */,
 				EF5F090A23BC5797002988D6 /* UIDevice+Ext.swift in Sources */,
 				EF5F090423BC4C4C002988D6 /* AppConfigs.swift in Sources */,
 				EF5F090623BC573B002988D6 /* UIViewController+Ext.swift in Sources */,
+				EF0397EE23C8C6CC00E32EB4 /* UIButton+Ext.swift in Sources */,
 				EFBB1DB023BD03A4001820B5 /* TableViewController.swift in Sources */,
+				EF0397F023C8C73900E32EB4 /* UIImage+Ext.swift in Sources */,
 				EF015B7E23BD8743002D1BEC /* WebController.swift in Sources */,
 				EF5F090823BC576A002988D6 /* UIFont+Ext.swift in Sources */,
 				EF5F090E23BC596A002988D6 /* Helper.swift in Sources */,
@@ -758,8 +810,10 @@
 				EFBB1DB223BD03A4001820B5 /* CollectionViewController.swift in Sources */,
 				EF5880CF23BCFFCC00CAD196 /* String+Ext.swift in Sources */,
 				EFBB1DB323BD03A4001820B5 /* TabBarController.swift in Sources */,
+				EF015C8E23CA34A000B241EE /* LoginValidate.swift in Sources */,
 				EF5880CB23BCF55800CAD196 /* TabbarContentView.swift in Sources */,
 				EF5F08FB23BC2A7C002988D6 /* UIColor+Ext.swift in Sources */,
+				EF015C8B23CA2EF700B241EE /* UIViewController+Rx.swift in Sources */,
 				EF5F091923BC5A93002988D6 /* DefaultKeys.swift in Sources */,
 				EF5F091023BC59FE002988D6 /* UIAlertController+Ext.swift in Sources */,
 				EF4FA7A323C3A1090081E6C9 /* ListEditController.swift in Sources */,
@@ -767,12 +821,15 @@
 				EF4FA79D23C3924A0081E6C9 /* LoginController.swift in Sources */,
 				EF54FF3823BBB00C004292EF /* LibsManager.swift in Sources */,
 				EF5F090C23BC5846002988D6 /* Bundle+Ext.swift in Sources */,
+				EF0397F323C8D47400E32EB4 /* LoginViewModel.swift in Sources */,
 				EF4FA79923C38C690081E6C9 /* RefreshViewModel.swift in Sources */,
 				EF4FA7A123C394CA0081E6C9 /* ClassName+Ext.swift in Sources */,
 				EF4FA79F23C392580081E6C9 /* RegisterController.swift in Sources */,
 				EF5F091A23BC5A93002988D6 /* FileManager+Ext.swift in Sources */,
+				EF015C9023CA35BE00B241EE /* ValidatorError.swift in Sources */,
 				EF54FF5A23BBB1A8004292EF /* ImportFile.swift in Sources */,
 				EF54FF5123BBB00C004292EF /* UGCVideoController.swift in Sources */,
+				EF015C8923CA269500B241EE /* UIState+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

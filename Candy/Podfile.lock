@@ -5,30 +5,30 @@ PODS:
   - CryptoSwift (1.3.0)
   - Differentiator (4.0.1)
   - DZNEmptyDataSet (1.8.1)
-  - EachNavigationBar (1.14.1)
+  - EachNavigationBar (1.14.3)
   - ESTabBarController-swift (2.7)
   - Hero (1.5.0)
   - IQKeyboardManagerSwift (6.5.4)
   - JCore (2.1.8)
   - JPush (3.2.8):
     - JCore (< 3.0.0, >= 2.0.0)
-  - JXSegmentedView (1.0.2)
-  - KeychainSwift (18.0.0)
+  - JXSegmentedView (1.0.4)
+  - KeychainSwift (19.0.0)
   - Kingfisher (5.12.0):
     - Kingfisher/Core (= 5.12.0)
   - Kingfisher/Core (5.12.0)
   - KingfisherWebP (0.7.0):
     - Kingfisher (~> 5.8)
     - libwebp (>= 0.5.0)
-  - libwebp (1.0.3):
-    - libwebp/demux (= 1.0.3)
-    - libwebp/mux (= 1.0.3)
-    - libwebp/webp (= 1.0.3)
-  - libwebp/demux (1.0.3):
+  - libwebp (1.1.0):
+    - libwebp/demux (= 1.1.0)
+    - libwebp/mux (= 1.1.0)
+    - libwebp/webp (= 1.1.0)
+  - libwebp/demux (1.1.0):
     - libwebp/webp
-  - libwebp/mux (1.0.3):
+  - libwebp/mux (1.1.0):
     - libwebp/demux
-  - libwebp/webp (1.0.3)
+  - libwebp/webp (1.1.0)
   - MJRefresh (3.3.1)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
@@ -100,11 +100,12 @@ PODS:
   - SwifterSwift/SpriteKit (5.1.0)
   - SwifterSwift/SwiftStdlib (5.1.0)
   - SwifterSwift/UIKit (5.1.0)
-  - SwiftLint (0.38.0)
+  - SwiftLint (0.38.2)
   - SwiftyUserDefaults (5.0.0-beta.5)
   - Toast-Swift (5.0.1)
   - UIFontComplete (4.0.0)
   - URLNavigator (2.3.0)
+  - Validator (3.2.1)
   - WCDB.swift (1.0.8.2):
     - SQLiteRepairKit (~> 1.2.0)
     - WCDBOptimizedSQLCipher (~> 1.2.0)
@@ -149,6 +150,7 @@ DEPENDENCIES:
   - Toast-Swift
   - UIFontComplete
   - URLNavigator
+  - Validator
   - WCDB.swift
   - XCGLogger
 
@@ -197,6 +199,7 @@ SPEC REPOS:
     - Toast-Swift
     - UIFontComplete
     - URLNavigator
+    - Validator
     - WCDB.swift
     - WCDBOptimizedSQLCipher
     - XCGLogger
@@ -208,17 +211,17 @@ SPEC CHECKSUMS:
   CryptoSwift: 1283821600233bdbeb96d7b389c3288c3bf77211
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
-  EachNavigationBar: 52548a353a86c441714e355d12f97726d111bbe1
+  EachNavigationBar: 9809ab93fe5d3b821d34ddf6159a9634fdc18005
   ESTabBarController-swift: 4fb52ad03d94d0717ef97bc9eb09a5abfdded0a2
   Hero: b7385b75e7259da62f4f85462f59a5082d66b058
   IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
   JCore: a7f1dead960d77a97717c73ea8b0aa5b33706491
   JPush: 8ce888d6dedfa417e90c8b6bc87405a16ce2e699
-  JXSegmentedView: 2988fe07060a9b91b0112eabd6dee0df0cbca8b3
-  KeychainSwift: c46e1438d121e47459fb304ac88c5e058a2a91ed
+  JXSegmentedView: b278b4c5d4c4c2982b4e084cef76ff1ddd37c6a5
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
   Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
   KingfisherWebP: 50d8389a48a9004c36e655470ccbff96de1ced9c
-  libwebp: 057912d6d0abfb6357d8bb05c0ea470301f5d61e
+  libwebp: 946cb3063cea9236285f7e9a8505d806d30e07f3
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   "NSObject+Rx": 2eb2cf51fd1c554118449a7fbc36e4cd620b9e94
@@ -240,15 +243,16 @@ SPEC CHECKSUMS:
   SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
   SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
   SwifterSwift: a9e8e144832638c2850b43da5feaf9598c6ad65b
-  SwiftLint: 4105f061f9812b214568b736dab580ab2c73a582
+  SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
   SwiftyUserDefaults: 8880483e55be344dce2e5e2f18c70b0564ff7676
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   UIFontComplete: 9542d390ee6114412a585d979b09fe820896695d
   URLNavigator: 2593c0e2d293732ec5c44503cf54dceba1a68085
+  Validator: 80a6f567220c962dfd2d9928ae98a8c1d164f6f4
   WCDB.swift: 05d509d7a0e60fb6e11c34eb7e4027c0fab5849f
   WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
   XCGLogger: 0434f15e3909cdc450bb63faf638b8792ab782ab
 
-PODFILE CHECKSUM: 37823f344b3e2aeb0131926e949221dcc00b980f
+PODFILE CHECKSUM: 274126cc66ecf94d142447ae0c09e0bbea733266
 
 COCOAPODS: 1.8.4

@@ -53,6 +53,7 @@ target 'Candy' do
 #  pod 'Localize-Swift'  # https://github.com/marmelroy/Localize-Swift
   pod 'R.swift'  # https://github.com/mac-cain13/R.swift
   pod 'ReachabilitySwift'  # https://github.com/ashleymills/Reachability.swift
+  pod 'Validator'  # https://github.com/adamwaite/Validator
   
   # UI
   pod 'MJRefresh'  # https://github.com/CoderMJLee/MJRefresh
