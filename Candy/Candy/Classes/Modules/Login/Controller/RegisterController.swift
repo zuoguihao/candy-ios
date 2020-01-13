@@ -28,6 +28,6 @@ class RegisterController: ViewController {
 private extension RegisterController {
 
     func makeUI() {
-
+        navItemTitle = R.string.localizable.registerNavTitle()
     }
 }

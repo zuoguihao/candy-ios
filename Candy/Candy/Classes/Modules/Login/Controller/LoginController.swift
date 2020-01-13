@@ -25,7 +25,8 @@ class LoginController: ViewController {
 
     // MARK: - Action
     @objc private func registerItemClick() {
-
+        let registerVC = RegisterController()
+        self.navigationController?.pushViewController(registerVC)
     }
 
     // MARK: - Lazy
@@ -104,15 +105,13 @@ private extension LoginController {
         let phone = phoneField.rx.text.orEmpty.share()
         let verifyCode = verifyCodeField.rx.text.orEmpty.share()
 
-        phoneField.rx.text.orEmpty
-            .map { $0[0..<11] }
+        phone.map { $0[0..<11] }
             .bind(to: phoneField.rx.text)
-        .disposed(by: disposeBag)
+            .disposed(by: disposeBag)
 
-        verifyCodeField.rx.text.orEmpty
-            .map { $0[0..<6] }
+        verifyCode.map { $0[0..<6] }
             .bind(to: verifyCodeField.rx.text)
-        .disposed(by: disposeBag)
+            .disposed(by: disposeBag)
 
         let input = LoginViewModel.Input(
             phone: phone,
@@ -130,8 +129,7 @@ private extension LoginController {
             .when(.recognized)
             .subscribe(onNext: { [weak self] (gesture) in
                 guard let `self` = self else { return }
-                let registerVC = RegisterController()
-                self.navigationController?.pushViewController(registerVC)
+                self.registerItemClick()
             })
             .disposed(by: disposeBag)
     }

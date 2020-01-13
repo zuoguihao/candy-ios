@@ -29,6 +29,7 @@ class NavigationController: UINavigationController {
 
         navigation.configuration.isEnabled = true
         navigation.configuration.barTintColor = UIColor.App.master
+        navigation.configuration.tintColor = UIColor.App.text_FFFFFF
         navigation.configuration.isShadowHidden = true
         navigation.configuration.backItem = Configuration.BackItem(style: .image(R.image.nav_back_white()))
         navigation.configuration.titleTextAttributes = [
